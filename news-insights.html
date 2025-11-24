@@ -1,0 +1,546 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Sep 22 2025 20:52:12 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="news-insights-page" data-wf-site="68d1b6e69cdb91df35f09497" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>News & Insights | Comphya</title>
+  <meta name="description" content="Stay updated with the latest news, insights, and developments from Comphya in neuromodulation technology and men's health innovation.">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/dkb-72d96d.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600","IBM Plex Mono:regular,500,600"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  
+  <!-- News & Insights Page Specific Styles -->
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9fafb;
+      color: #1a1a1a;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .news-hero-section {
+      background-color: #f9fafb;
+      padding: 120px 32px 80px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .news-hero-title {
+      font-size: 48px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    
+    .news-hero-description {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #374151;
+      max-width: 600px;
+      margin-bottom: 60px;
+    }
+    
+    .publications-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px 80px;
+    }
+    
+    .publication-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #6ba3d4;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    .publication-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(107, 163, 212, 0.2);
+      border-left-color: #5592c3;
+    }
+    
+    .publication-icon {
+      background: #6ba3d4;
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 32px 32px 24px;
+      border-radius: 8px;
+    }
+    
+    .publication-icon svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
+    
+    .publication-content {
+      padding: 0 32px 32px;
+    }
+    
+    .publication-name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #6ba3d4;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .publication-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    
+    .publication-description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #374151;
+      margin-bottom: 24px;
+    }
+    
+    .learn-more-link {
+      display: inline-flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: 500;
+      color: #6ba3d4;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .learn-more-link:hover {
+      color: #5592c3;
+    }
+    
+    .learn-more-link svg {
+      width: 16px;
+      height: 16px;
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .learn-more-link:hover svg {
+      transform: translateX(4px);
+    }
+    
+    /* Filter Section */
+    .filter-section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 32px 40px;
+    }
+    
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .filter-btn {
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50px;
+      padding: 12px 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      color: #374151;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      outline: none;
+    }
+    
+    .filter-btn:hover {
+      background: rgba(107, 163, 212, 0.1);
+      border-color: #6ba3d4;
+      color: #6ba3d4;
+    }
+    
+    .filter-btn.active {
+      background: #6ba3d4;
+      border-color: #6ba3d4;
+      color: white;
+      box-shadow: 0 4px 12px rgba(107, 163, 212, 0.3);
+    }
+    
+    .publication-card {
+      display: block;
+      animation: fadeIn 0.4s ease;
+    }
+    
+    .publication-card.hidden {
+      display: none;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @media (max-width: 991px) {
+      .publications-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 767px) {
+      .news-hero-section {
+        padding: 100px 24px 40px;
+      }
+      
+      .news-hero-title {
+        font-size: 36px;
+      }
+      
+      .filter-section {
+        padding: 0 24px 32px;
+      }
+      
+      .filter-buttons {
+        justify-content: flex-start;
+      }
+      
+      .filter-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+      
+      .publications-grid {
+        grid-template-columns: 1fr;
+        padding: 0 24px 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div data-wf--navbar--mode="light" class="navbar__wrapper">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+      <div class="container w-container">
+        <div class="navbar__row">
+          <a href="index.html" class="navbar__logo w-nav-brand"><img src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="logo__image" style="transform: scale(1.2);"></a>
+          <nav role="navigation" class="navbar__menu w-nav-menu">
+            <a href="index.html" class="nav__link w-nav-link">Home</a>
+            <a href="about.html" class="nav__link w-nav-link">About</a>
+            <a href="caverstim.html" class="nav__link w-nav-link">CaverSTIM™</a>
+            <a href="news-insights.html" aria-current="page" class="nav__link w-nav-link w--current">News & Insights</a>
+          </nav>
+          <div class="navbar__actions">
+            <a href="index.html#contact" class="nav__action w-inline-block">
+              <div data-wf--light-outline---button--slide-effect="bottom" class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
+                <div class="outline__button__element w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
+                  <div class="button__text">Find Out More</div>
+                </div>
+                <div class="outline__button__element w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc hover">
+                  <div class="button__text">Find Out More</div>
+                </div>
+              </div>
+            </a>
+            <div class="menu__toggle w-nav-button">
+              <div class="menu__toggle__element">
+                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                    <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
+                  </svg></div>
+              </div>
+              <div class="menu__toggle__element hover">
+                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                    <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="releted_codes w-embed">
+      <style>
+.outline__button__light .outline__button__element {
+    -webkit-transform: translate(0%, 0%);
+        -ms-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="right"] .outline__button__element.hover {
+	left: 100%;
+  top: 0%;
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="bottom"] .outline__button__element.hover {
+	left: 0%;
+  top: -100%;
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="left"] .outline__button__element.hover {
+	left: -100%;
+  top: 0%;
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="top"]:hover .outline__button__element {
+    -webkit-transform: translate(0%, -100%);
+        -ms-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="right"]:hover .outline__button__element {
+    -webkit-transform: translate(-100%, 0%);
+        -ms-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="bottom"]:hover .outline__button__element {
+    -webkit-transform: translate(0%, 100%);
+        -ms-transform: translate(0%, 100%);
+            transform: translate(0%, 100%);
+}
+.outline__button__light[data-wf--light-outline---button--slide-effect="left"]:hover .outline__button__element {
+    -webkit-transform: translate(100%, 0%);
+        -ms-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+}
+      </style>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="news-hero-section">
+    <h1 class="news-hero-title">News & Insights</h1>
+    <p class="news-hero-description">
+      Comphya provides cutting-edge insights and thought leadership on neuromodulation, men's health, and medical device innovation. Our focus is on advancing patient care through evidence-based research and clinical excellence.
+    </p>
+  </div>
+
+  <!-- Filter Section -->
+  <div class="filter-section">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All Articles</button>
+      <button class="filter-btn" data-filter="clinical">Clinical Innovations</button>
+      <button class="filter-btn" data-filter="research">Research & Development</button>
+      <button class="filter-btn" data-filter="patient">Patient Impact</button>
+      <button class="filter-btn" data-filter="industry">Industry Trends</button>
+      <button class="filter-btn" data-filter="regulatory">Regulatory & Compliance</button>
+      <button class="filter-btn" data-filter="company">Company News</button>
+    </div>
+  </div>
+
+  <!-- Publications Grid -->
+  <div class="publications-grid">
+    
+    <!-- Card 1: Clinical Innovation -->
+    <div class="publication-card" data-category="clinical">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Clinical Innovations</div>
+        <h3 class="publication-title">Neuromodulation in Post-Surgical Care</h3>
+        <p class="publication-description">
+          How targeted nerve stimulation is transforming recovery outcomes for patients undergoing prostate surgery, with clinical evidence and patient testimonials.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2: Research & Development -->
+    <div class="publication-card" data-category="research">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Research & Development</div>
+        <h3 class="publication-title">The Science Behind CaverSTIM™</h3>
+        <p class="publication-description">
+          Deep dive into the neuroscience and engineering principles that power CaverSTIM™'s approach to erectile nerve function restoration.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 3: Patient Impact -->
+    <div class="publication-card" data-category="patient">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Patient Impact</div>
+        <h3 class="publication-title">Quality of Life After Prostatectomy</h3>
+        <p class="publication-description">
+          Understanding the psychological and physical challenges men face after prostate cancer surgery, and how innovative solutions can help.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 4: Industry Trends -->
+    <div class="publication-card" data-category="industry">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Industry Trends</div>
+        <h3 class="publication-title">The Future of Implantable Medical Devices</h3>
+        <p class="publication-description">
+          Exploring the evolution of bioelectronic medicine and how miniaturization and smart technology are revolutionizing patient treatment.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 5: Regulatory & Compliance -->
+    <div class="publication-card" data-category="regulatory">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Regulatory & Compliance</div>
+        <h3 class="publication-title">Navigating Medical Device Approvals</h3>
+        <p class="publication-description">
+          Insights into the regulatory pathway for innovative neuromodulation devices in Europe and beyond, from CE marking to clinical trials.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 6: Company News -->
+    <div class="publication-card" data-category="company">
+      <div class="publication-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="publication-content">
+        <div class="publication-name">Company News</div>
+        <h3 class="publication-title">Comphya Milestones & Achievements</h3>
+        <p class="publication-description">
+          Stay up to date with funding announcements, partnership developments, clinical trial progress, and award recognitions from the Comphya team.
+        </p>
+        <a href="#" class="learn-more-link">
+          Learn More
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer-section" style="background-color: #f9fafb; padding: 60px 32px;">
+    <div class="footer-container" style="max-width: 1200px; margin: 0 auto;">
+      <div class="footer-content" style="text-align: center;">
+        <div class="footer-brand" style="display: flex; flex-direction: column; align-items: center;">
+          <img src="images/UbPK27QY.png" alt="Comphya" class="footer-logo" style="max-width: 120px; height: auto;">
+          <p class="footer-tagline" style="margin-top: 16px; color: #374151; font-size: 14px; max-width: 300px; text-align: center;">
+            Pioneering neuromodulation technology for men's health and well-being.
+          </p>
+        </div>
+        <div class="footer-copyright" style="margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(0, 0, 0, 0.1); color: #6b7280; font-size: 14px;">
+          <p style="margin: 0;">&copy; 2025 Comphya. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68d1b6e69cdb91df35f09497" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const publicationCards = document.querySelectorAll('.publication-card');
+      
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filterValue = this.getAttribute('data-filter');
+          
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Filter cards
+          publicationCards.forEach(card => {
+            if (filterValue === 'all') {
+              card.classList.remove('hidden');
+              // Trigger reflow for animation
+              void card.offsetWidth;
+            } else {
+              if (card.getAttribute('data-category') === filterValue) {
+                card.classList.remove('hidden');
+                // Trigger reflow for animation
+                void card.offsetWidth;
+              } else {
+                card.classList.add('hidden');
+              }
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+

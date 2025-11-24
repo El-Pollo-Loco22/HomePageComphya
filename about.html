@@ -327,6 +327,20 @@
       width: 100px;
     }
     
+    /* Placeholder cards - non-interactive */
+    .about-team-card.placeholder-card {
+      pointer-events: none;
+    }
+    
+    .about-team-card.placeholder-card:hover {
+      transform: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .about-team-card.placeholder-card:hover::after {
+      width: 0;
+    }
+    
     .about-team-avatar {
       width: 80px;
       height: 80px;
@@ -852,7 +866,7 @@
             <a href="index.html#home" class="nav__link w-nav-link">Home</a>
             <a href="about.html" aria-current="page" class="nav__link w-nav-link w--current">About</a>
             <a href="caverstim.html" class="nav__link w-nav-link">CaverSTIM™</a>
-            <a href="index.html#news" class="nav__link w-nav-link">News & Insights</a>
+            <a href="news-insights.html" class="nav__link w-nav-link">News & Insights</a>
           </nav>
           <div class="navbar__actions">
             <a href="index.html#contact" class="nav__action w-inline-block">
@@ -1102,17 +1116,17 @@
         
         <div class="about-team-card" data-w-id="team-4" data-member-id="rodrigo">
           <div class="about-team-avatar">
-            <img src="images/thumbnail_Headshot - noBackground.png" alt="Rodrigo Fraga‑Silva">
+            <img src="images/thumbnail_Headshot - noBackground.png" alt="Rodrigo Fraga‑Silva" style="background-color: #f0f0f0; border-radius: inherit;">
           </div>
-          <h3 class="about-team-name">Rodrigo Fraga‑Silva, Ph.D.</h3>
-          <p class="about-team-role">COO & Co‑founder</p>
+          <h3 class="about-team-name">Rodrigo Fraga‑Silva, PhD</h3>
+          <p class="about-team-role">Chief Operating Officer, Co-Founder, and Board Member</p>
           <p class="about-team-bio">Pharmacologist with 50+ publications and multiple patents in sexual medicine and cardiovascular biology; leads strategy, IP and general management at Comphya.</p>
         </div>
         
         <div class="about-team-card" data-w-id="team-5" data-member-id="michael">
           <div class="about-team-avatar">MI</div>
-          <h3 class="about-team-name">Mikael Sturny, Ph.D.</h3>
-          <p class="about-team-role">CTO & Co‑founder</p>
+          <h3 class="about-team-name">Mikael Sturny, PhD</h3>
+          <p class="about-team-role">Chief Technology Officer & Co-Founder</p>
           <p class="about-team-bio">Life science engineer trained at EPFL with expertise in neuromodulation, implantable devices and clinical study management; prior experience at Rheon Medical and Johns Hopkins University School of Medicine.</p>
         </div>
         
@@ -1131,7 +1145,7 @@
       <div class="about-team-grid">
         <div class="about-team-card" data-w-id="team-1" data-member-id="steve">
           <div class="about-team-avatar">ST</div>
-          <h3 class="about-team-name">Steve Swinson, Ph.D.</h3>
+          <h3 class="about-team-name">Steve Swinson, PhD</h3>
           <p class="about-team-role">Board Chairman</p>
           <p class="about-team-bio">Senior executive with 35+ years in medical devices and capital equipment, with leadership roles at Medtronic, GE Medical Systems and others, focusing on strategy, market access, and growth.</p>
         </div>
@@ -1145,9 +1159,57 @@
         
         <div class="about-team-card" data-w-id="team-3" data-member-id="nikos">
           <div class="about-team-avatar">NI</div>
-          <h3 class="about-team-name">Nikos Stergiopulos, Ph.D.</h3>
+          <h3 class="about-team-name">Nikos Stergiopulos, PhD</h3>
           <p class="about-team-role">Board Member</p>
           <p class="about-team-bio">Professor at EPFL and Director of the Laboratory of Hemodynamics and Cardiovascular Technology; inventor and founder across multiple successful medical device ventures.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scientific Advisory Board -->
+    <div style="max-width: 1050px; margin: 80px auto 0;">
+      <h3 style="font-size: 16px; color: #2c3e50; margin-bottom: 32px; font-family: 'Inter', sans-serif; font-weight: 400; text-align: center;">Scientific Advisory Board</h3>
+      <div class="about-team-grid">
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        </div>
+        
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        </div>
+        
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        </div>
+        
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        </div>
+        
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        </div>
+        
+        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
+          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
+          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
+          <p class="about-team-role" style="color: #9ca3af;">Scientific Advisory Board Member</p>
+          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
         </div>
       </div>
     </div>
@@ -1275,15 +1337,15 @@
     // Team Member Data Structure
     const teamMembers = {
       'rodrigo': {
-        name: 'Rodrigo Fraga‑Silva, Ph.D.',
-        title: 'COO & Co‑founder',
+        name: 'Rodrigo Fraga‑Silva, PhD',
+        title: 'Chief Operating Officer, Co-Founder, and Board Member',
         photo: 'images/thumbnail_Headshot - noBackground.png',
         initials: 'RF',
         shortBio: 'Pharmacologist with 50+ publications and multiple patents in sexual medicine and cardiovascular biology; leads strategy, IP and general management at Comphya.',
         fullBio: `
-          <p>Rodrigo Fraga-Silva, Ph.D., is a pharmacologist and entrepreneur with extensive expertise in sexual medicine, cardiovascular biology, and translational research. With over 50 peer-reviewed publications and multiple patents, Rodrigo has dedicated his career to advancing therapies that address unmet medical needs.</p>
+          <p>Rodrigo Fraga-Silva, PhD, is a pharmacologist and entrepreneur with extensive expertise in sexual medicine, cardiovascular biology, and translational research. With over 50 peer-reviewed publications and multiple patents, Rodrigo has dedicated his career to advancing therapies that address unmet medical needs.</p>
           
-          <p>As COO and Co-founder of Comphya, Rodrigo leads the company's strategic direction, intellectual property development, and overall management. His vision is to bring innovative neuromodulation technologies to patients who are unresponsive to conventional treatments for erectile dysfunction.</p>
+          <p>As Chief Operating Officer, Co-Founder, and Board Member of Comphya, Rodrigo leads the company's strategic direction, intellectual property development, and overall management. His vision is to bring innovative neuromodulation technologies to patients who are unresponsive to conventional treatments for erectile dysfunction.</p>
           
           <p>Before founding Comphya, Rodrigo held research positions at leading institutions where he contributed to breakthrough discoveries in vascular biology and therapeutic development. His work bridges the gap between fundamental research and clinical application, making him uniquely positioned to guide Comphya's mission.</p>
         `,
@@ -1305,13 +1367,13 @@
         email: 'info@comphya.com'
       },
       'michael': {
-        name: 'Mikael Sturny, Ph.D.',
-        title: 'CTO & Co‑founder',
+        name: 'Mikael Sturny, PhD',
+        title: 'Chief Technology Officer & Co-Founder',
         photo: '',
         initials: 'MI',
         shortBio: 'Life science engineer trained at EPFL with expertise in neuromodulation, implantable devices and clinical study management; prior experience at Rheon Medical and Johns Hopkins University School of Medicine.',
         fullBio: `
-          <p>Mikael Sturny, Ph.D., is a life science engineer with specialized training from the École Polytechnique Fédérale de Lausanne (EPFL). As Chief Technology Officer and Co-founder of Comphya, Mikael leads the technical development of CaverSTIM™ and oversees the company's research and engineering initiatives.</p>
+          <p>Mikael Sturny, PhD, is a life science engineer with specialized training from the École Polytechnique Fédérale de Lausanne (EPFL). As Chief Technology Officer and Co-founder of Comphya, Mikael leads the technical development of CaverSTIM™ and oversees the company's research and engineering initiatives.</p>
           
           <p>Mikael's expertise spans neuromodulation technologies, implantable medical devices, and clinical study design and management. His technical acumen and hands-on approach ensure that Comphya's innovations meet the highest standards of safety, efficacy, and usability.</p>
           
@@ -1337,13 +1399,13 @@
         email: 'fiona@comphya.com'
       },
       'steve': {
-        name: 'Steve Swinson, Ph.D.',
+        name: 'Steve Swinson, PhD',
         title: 'Board Chairman',
         photo: '',
         initials: 'ST',
         shortBio: 'Senior executive with 35+ years in medical devices and capital equipment, with leadership roles at Medtronic, GE Medical Systems and others, focusing on strategy, market access, and growth.',
         fullBio: `
-          <p>Steve Swinson, Ph.D., brings over 35 years of leadership experience in the medical device and capital equipment industries. As Board Chairman of Comphya, Steve provides strategic guidance, market insights, and governance to help the company achieve its ambitious goals.</p>
+          <p>Steve Swinson, PhD, brings over 35 years of leadership experience in the medical device and capital equipment industries. As Board Chairman of Comphya, Steve provides strategic guidance, market insights, and governance to help the company achieve its ambitious goals.</p>
           
           <p>Throughout his distinguished career, Steve has held senior executive roles at leading companies including Medtronic and GE Medical Systems. His expertise spans commercialization strategy, market access, business development, and organizational growth, making him a trusted advisor to the Comphya team.</p>
           
@@ -1369,13 +1431,13 @@
         email: 'board@comphya.com'
       },
       'nikos': {
-        name: 'Nikos Stergiopulos, Ph.D.',
+        name: 'Nikos Stergiopulos, PhD',
         title: 'Board Member',
         photo: '',
         initials: 'NI',
         shortBio: 'Professor at EPFL and Director of the Laboratory of Hemodynamics and Cardiovascular Technology; inventor and founder across multiple successful medical device ventures.',
         fullBio: `
-          <p>Nikos Stergiopulos, Ph.D., is a Professor at the École Polytechnique Fédérale de Lausanne (EPFL) and Director of the Laboratory of Hemodynamics and Cardiovascular Technology. As a Board Member of Comphya, Nikos brings deep scientific expertise and entrepreneurial experience to the company.</p>
+          <p>Nikos Stergiopulos, PhD, is a Professor at the École Polytechnique Fédérale de Lausanne (EPFL) and Director of the Laboratory of Hemodynamics and Cardiovascular Technology. As a Board Member of Comphya, Nikos brings deep scientific expertise and entrepreneurial experience to the company.</p>
           
           <p>Professor Stergiopulos is a prolific inventor and serial entrepreneur, having founded and contributed to multiple successful medical device ventures. His research in cardiovascular physiology and biomedical engineering has led to numerous patents and breakthrough technologies.</p>
           
