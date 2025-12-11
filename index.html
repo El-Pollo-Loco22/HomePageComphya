@@ -35,6 +35,166 @@
     .navbar__wrapper.scrolled {
       background-color: rgba(0, 0, 0, 1);
     }
+    
+    /* Mobile Optimizations */
+    @media (max-width: 767px) {
+      /* Hero button box positioning */
+      .hp_button_box {
+        position: relative !important;
+        bottom: auto !important;
+        left: auto !important;
+        margin-top: 32px;
+        justify-content: center;
+        width: 100%;
+      }
+      
+      /* Ensure buttons are touch-friendly */
+      .primary__button,
+      .outline__button__light {
+        min-height: 44px;
+        min-width: 44px;
+      }
+      
+      /* Fix container padding on mobile */
+      .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      
+      /* Prevent horizontal scroll */
+      body {
+        overflow-x: hidden;
+        width: 100%;
+      }
+      
+      /* Make images responsive */
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      /* Optimize font sizes for mobile */
+      .header__title__one {
+        font-size: clamp(28px, 8vw, 48px) !important;
+        line-height: 1.2 !important;
+      }
+      
+      /* Partner logos responsive */
+      .trusted__logo {
+        height: 50px !important;
+      }
+      
+      /* Clinical section mobile adjustments */
+      .clinical-results-callout {
+        padding: 20px !important;
+      }
+      
+      /* Mission section image responsive */
+      #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 250px;
+      }
+      
+      /* Timeline adjustments for mobile */
+      .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+        margin-left: 0 !important;
+        padding-left: 48px !important;
+      }
+      
+      /* Technology cards stack on mobile */
+      #technology > .w-layout-blockcontainer > div > div:nth-child(2) {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+      
+      #technology > .w-layout-blockcontainer > div > div:nth-child(2) > div {
+        transform: translateY(0) !important;
+      }
+      
+      /* News grid single column on mobile */
+      .news-grid-new {
+        grid-template-columns: 1fr !important;
+      }
+      
+      /* How it works cards stack */
+      #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+        flex-direction: column !important;
+        gap: 24px !important;
+      }
+    }
+    
+    @media (max-width: 479px) {
+      /* Extra small mobile adjustments */
+      .hp_button_box {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      
+      .primary__button,
+      .outline__button__light {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .header__title__one {
+        font-size: 24px !important;
+      }
+      
+      /* Smaller padding on very small screens */
+      .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+      }
+      
+      /* Clinical callout smaller text */
+      .clinical-results-callout h3 {
+        font-size: 18px !important;
+      }
+      
+      .clinical-results-callout li {
+        font-size: 15px !important;
+      }
+    }
+    
+    /* Touch target optimization */
+    @media (hover: none) and (pointer: coarse) {
+      a, button, .nav__link, .menu__toggle {
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    
+    /* Navigation mobile optimizations */
+    @media (max-width: 991px) {
+      .w-nav-button {
+        min-height: 44px;
+        min-width: 44px;
+        padding: 12px;
+      }
+      
+      .w-nav-menu {
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
+      
+      .w-nav-link {
+        padding: 16px 20px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      
+      .navbar__actions {
+        width: auto;
+      }
+    }
   </style>
 </head>
 <body>
@@ -300,7 +460,7 @@ h6.split__title ~ .split__items .split__item {
       <div data-w-id="81d7f092-dfe7-4c0b-4bb0-3367cbf63c9b" style="opacity:0" class="header__one__info">
         <p>The first implantable neuromodulation system designed to support natural erectile function recovery, following prostate cancer surgery when nerve damage is most common. Restoring Erectile Nerve Function at the source </p>
       </div>
-      <div class="hp_button_box" style="position:absolute; bottom:3%; left: var(--lg); display:flex; gap:16px;">
+      <div class="hp_button_box" style="position:absolute; bottom:3%; left: var(--lg); display:flex; gap:16px; flex-wrap: wrap;">
         <a href="#about" class="link__reset w-inline-block">
           <div data-wf--primary---button--slide-effect="top" class="primary__button">
             <div class="primary__button__element">
@@ -369,6 +529,7 @@ h6.split__title ~ .split__items .split__item {
               filter: grayscale(100%);
               transition: all 0.3s ease;
               flex-shrink: 0;
+              max-width: 100%;
             }
             
             .trusted__logo:hover {
@@ -382,6 +543,26 @@ h6.split__title ~ .split__items .split__item {
               }
               100% { 
                 transform: translateX(-50%); 
+              }
+            }
+            
+            @media (max-width: 767px) {
+              .trusted__logo {
+                height: 50px !important;
+              }
+              
+              .partner__logos {
+                gap: 40px !important;
+              }
+            }
+            
+            @media (max-width: 479px) {
+              .trusted__logo {
+                height: 40px !important;
+              }
+              
+              .partner__logos {
+                gap: 30px !important;
               }
             }
           </style>
@@ -506,8 +687,8 @@ h6.split__title ~ .split__items .split__item {
       <div style="display: flex; gap: 48px; align-items: center;">
         
         <!-- Mission Image -->
-        <div style="flex: 0 0 477px; position: relative;">
-          <div style="position: relative; width: 477px; height: 400px; border-radius: 24px; overflow: hidden; box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);">
+        <div style="flex: 0 0 477px; position: relative; max-width: 100%;">
+          <div style="position: relative; width: 100%; max-width: 477px; height: 400px; border-radius: 24px; overflow: hidden; box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);">
             <img src="images/AdobeStock_472568937.jpeg" 
                  loading="lazy" 
                  alt="People having a conversation about medical care and treatment options" 
@@ -567,16 +748,21 @@ h6.split__title ~ .split__items .split__item {
         
         @media (max-width: 767px) {
           #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
-            height: 300px !important;
+            height: auto !important;
+            min-height: 300px;
           }
           #about .w-layout-blockcontainer > div:nth-child(2) > div:last-child p {
             font-size: 16px !important;
+          }
+          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child {
+            max-width: 100% !important;
           }
         }
         
         @media (max-width: 479px) {
           #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
-            height: 250px !important;
+            height: auto !important;
+            min-height: 250px;
             border-radius: 16px !important;
           }
           #about .w-layout-blockcontainer > div:nth-child(2) > div:last-child p {
@@ -586,6 +772,7 @@ h6.split__title ~ .split__items .split__item {
           #about a[href="#technology"] {
             font-size: 14px !important;
             padding: 12px 24px !important;
+            min-height: 44px;
           }
         }
       </style>
@@ -767,14 +954,30 @@ h6.split__title ~ .split__items .split__item {
           .section__padding.white__bg.index__up h3 {
             font-size: 18px !important;
           }
+          /* Timeline adjustments for mobile */
+          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+            margin-left: 0 !important;
+            padding-left: 48px !important;
+          }
+          /* Timeline circles adjust position */
+          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div > div > div:first-child {
+            left: -48px !important;
+          }
         }
         
         @media (max-width: 479px) {
           .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
-            margin-left: 16px !important;
+            margin-left: 0 !important;
+            padding-left: 40px !important;
           }
           .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div:nth-child(3) > div {
             gap: 32px !important;
+          }
+          /* Smaller timeline circles on very small screens */
+          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div > div > div:first-child {
+            width: 48px !important;
+            height: 48px !important;
+            left: -40px !important;
           }
         }
       </style>
@@ -911,8 +1114,16 @@ h6.split__title ~ .split__items .split__item {
           #how-it-works h2 {
             font-size: 28px !important;
           }
+          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+            flex-direction: column !important;
+            gap: 24px !important;
+          }
           #how-it-works > .w-layout-blockcontainer > div:nth-child(2) > div {
             padding: 24px !important;
+          }
+          /* How it works callout responsive */
+          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) ul {
+            grid-template-columns: 1fr !important;
           }
         }
         @media (max-width: 479px) {
@@ -921,6 +1132,9 @@ h6.split__title ~ .split__items .split__item {
           }
           #how-it-works h3 {
             font-size: 18px !important;
+          }
+          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+            padding: 20px !important;
           }
         }
       </style>
@@ -1396,6 +1610,20 @@ h6.split__title ~ .split__items .split__item {
           </div>
         </div>
       </div>
+      <style>
+        @media (max-width: 991px) {
+          .stack__items {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        
+        @media (max-width: 767px) {
+          .stack__items {
+            grid-template-columns: 1fr !important;
+            gap: 20px !important;
+          }
+        }
+      </style>
       <div class="space w-variant-f3eec6e8-6c6d-185b-db1c-fcf6414eeea8"></div>
       <div class="text__center">
         <a href="#contact" class="link__reset w-inline-block">
