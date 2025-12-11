@@ -195,6 +195,83 @@
         width: auto;
       }
     }
+    
+    /* Make Find Out More button and hamburger menu more visible on mobile */
+    @media (max-width: 767px) {
+      /* Find Out More button - increase visibility */
+      .navbar__actions .outline__button__light {
+        border: 2px solid rgba(255, 255, 255, 0.9) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+      }
+      
+      .navbar__actions .outline__button__light .button__text {
+        color: rgba(255, 255, 255, 0.95) !important;
+        font-weight: 500 !important;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+      }
+      
+      .navbar__actions .outline__button__light:hover {
+        border-color: rgba(255, 255, 255, 1) !important;
+        background: rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+      }
+      
+      /* Hamburger menu - increase visibility */
+      .menu__toggle.w-nav-button {
+        border: 2px solid rgba(255, 255, 255, 0.9) !important;
+        background: rgba(255, 255, 255, 0.1) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+        padding: 10px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+      }
+      
+      .menu__toggle .svg__icon svg {
+        fill: rgba(255, 255, 255, 0.95) !important;
+        filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)) !important;
+      }
+      
+      .menu__toggle.w-nav-button:hover,
+      .menu__toggle.w-nav-button:focus {
+        border-color: rgba(255, 255, 255, 1) !important;
+        background: rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+      }
+      
+      .menu__toggle.w-nav-button.w--open {
+        background: rgba(255, 255, 255, 0.25) !important;
+        border-color: rgba(255, 255, 255, 1) !important;
+      }
+      
+      /* Ensure navbar background is dark enough for contrast */
+      .navbar__wrapper {
+        background-color: rgba(0, 0, 0, 0.85) !important;
+      }
+      
+      .navbar__wrapper.scrolled {
+        background-color: rgba(0, 0, 0, 0.95) !important;
+      }
+    }
+    
+    @media (max-width: 479px) {
+      /* Even more visibility on very small screens */
+      .navbar__actions .outline__button__light {
+        border-width: 2.5px !important;
+        padding: 10px 16px !important;
+      }
+      
+      .navbar__actions .outline__button__light .button__text {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+      }
+      
+      .menu__toggle.w-nav-button {
+        border-width: 2.5px !important;
+        padding: 12px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1039,7 +1116,7 @@ h6.split__title ~ .split__items .split__item {
       </div>
 
       <!-- Cards Container -->
-      <div style="display: flex; gap: 32px; align-items: stretch;">
+      <div class="how-it-works-cards" style="display: flex; gap: 32px; align-items: stretch;">
         
         <!-- Card 1 -->
         <div style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
@@ -1105,6 +1182,11 @@ h6.split__title ~ .split__items .split__item {
             padding-left: 24px;
             padding-right: 24px;
           }
+          /* Stack cards on tablet */
+          .how-it-works-cards {
+            flex-direction: column !important;
+            gap: 24px !important;
+          }
           #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
             flex-direction: column !important;
             gap: 24px !important;
@@ -1113,6 +1195,15 @@ h6.split__title ~ .split__items .split__item {
         @media (max-width: 767px) {
           #how-it-works h2 {
             font-size: 28px !important;
+          }
+          /* Stack cards on mobile */
+          .how-it-works-cards {
+            flex-direction: column !important;
+            gap: 24px !important;
+          }
+          .how-it-works-cards > div {
+            width: 100% !important;
+            flex: 1 1 100% !important;
           }
           #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
             flex-direction: column !important;
@@ -1132,6 +1223,13 @@ h6.split__title ~ .split__items .split__item {
           }
           #how-it-works h3 {
             font-size: 18px !important;
+          }
+          /* Cards stack on small mobile */
+          .how-it-works-cards {
+            gap: 20px !important;
+          }
+          .how-it-works-cards > div {
+            padding: 20px !important;
           }
           #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
             padding: 20px !important;

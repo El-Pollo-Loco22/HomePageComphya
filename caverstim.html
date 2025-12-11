@@ -1124,6 +1124,72 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       }
     }
+    
+    /* Make Find Out More button and hamburger menu more visible on mobile */
+    @media (max-width: 767px) {
+      /* Find Out More button - increase visibility */
+      .navbar__actions .outline__button__light {
+        border: 2px solid rgba(0, 0, 0, 0.3) !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+      }
+      
+      .navbar__actions .outline__button__light .button__text {
+        color: rgba(0, 0, 0, 0.9) !important;
+        font-weight: 500 !important;
+      }
+      
+      .navbar__actions .outline__button__light:hover {
+        border-color: rgba(0, 0, 0, 0.5) !important;
+        background: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      }
+      
+      /* Hamburger menu - increase visibility */
+      .menu__toggle.w-nav-button {
+        border: 2px solid rgba(0, 0, 0, 0.3) !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+        padding: 10px !important;
+        min-width: 44px !important;
+        min-height: 44px !important;
+      }
+      
+      .menu__toggle .svg__icon svg {
+        fill: rgba(0, 0, 0, 0.9) !important;
+      }
+      
+      .menu__toggle.w-nav-button:hover,
+      .menu__toggle.w-nav-button:focus {
+        border-color: rgba(0, 0, 0, 0.5) !important;
+        background: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+      }
+      
+      .menu__toggle.w-nav-button.w--open {
+        background: rgba(255, 255, 255, 1) !important;
+        border-color: rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+    
+    @media (max-width: 479px) {
+      /* Even more visibility on very small screens */
+      .navbar__actions .outline__button__light {
+        border-width: 2.5px !important;
+        padding: 10px 16px !important;
+      }
+      
+      .navbar__actions .outline__button__light .button__text {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+      }
+      
+      .menu__toggle.w-nav-button {
+        border-width: 2.5px !important;
+        padding: 12px !important;
+      }
+    }
   </style>
 </head>
 <body>
