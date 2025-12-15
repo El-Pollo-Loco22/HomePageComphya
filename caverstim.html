@@ -496,6 +496,34 @@
       object-fit: cover;
     }
     
+    .tab-content-video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
     /* Technical Specifications - Modern Two-Column Grid */
     .specs-two-column-grid {
       display: grid;
@@ -1376,7 +1404,7 @@
         <div class="caverstim-product-circle">
           <div class="caverstim-ring-outer"></div>
           <div class="caverstim-product-inner">
-            <img src="images/thumbnail_Picture CaverSTIM 1.png" alt="CaverSTIM Product" style="width: 216px; height: 216px; object-fit: contain;">
+            <img src="images/thumbnail_Picture CaverSTIM 1.png" alt="CaverSTIM Product" style="width: 324px; height: 324px; object-fit: contain;">
           </div>
           <div class="caverstim-ring-inner"></div>
         </div>
@@ -1469,6 +1497,7 @@
       <div class="tabs-nav">
         <button class="tab-button active" data-tab="overview">Overview</button>
         <button class="tab-button" data-tab="technology">Technology</button>
+        <button class="tab-button" data-tab="video">Video</button>
         <button class="tab-button" data-tab="specifications">Specifications</button>
       </div>
       <div class="tab-content active" id="tab-overview">
@@ -1589,6 +1618,13 @@
                 <text x="100" y="230" text-anchor="middle" font-size="12" fill="#2d3e4f" font-family="Inter">CaverSTIM™ Device</text>
               </svg>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-video">
+        <div class="tab-content-video">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Q2OsBjEQdww?si=apWs5SpJnaiK-SKO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>

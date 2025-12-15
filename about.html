@@ -1292,6 +1292,15 @@
           <p class="about-team-bio">Senior executive with 35+ years in medical devices and capital equipment, with leadership roles at Medtronic, GE Medical Systems and others, focusing on strategy, market access, and growth.</p>
         </div>
         
+        <div class="about-team-card" data-w-id="team-4" data-member-id="rodrigo">
+          <div class="about-team-avatar">
+            <img src="images/thumbnail_Headshot - noBackground.png" alt="Rodrigo Fraga‑Silva" style="background-color: #f0f0f0; border-radius: inherit;">
+          </div>
+          <h3 class="about-team-name">Rodrigo Fraga‑Silva, PhD</h3>
+          <p class="about-team-role">Chief Operating Officer, Co-Founder, and Board Member</p>
+          <p class="about-team-bio">Pharmacologist with 50+ publications and multiple patents in sexual medicine and cardiovascular biology; oversees the technology development, quality management, regulatory and clinical affairs.</p>
+        </div>
+        
         <div class="about-team-card" data-w-id="team-3" data-member-id="nikos">
           <div class="about-team-avatar">NI</div>
           <h3 class="about-team-name">Nikos Stergiopulos, PhD</h3>
@@ -1498,7 +1507,7 @@
           
           <p>Pim brings deep expertise in scaling innovation, driving commercialization, and executing strategic exits. He holds an MBA from The International Institute for Management Development (IMD) and executive training from Harvard Medical School.</p>
         `,
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/pim-van-wesel-663163',
         email: 'info@comphya.com'
       },
       'michael': {
@@ -1514,7 +1523,7 @@
           
           <p>He has been focusing that expertise into developing Comphya and building the company's Quality Management System, leading the technical development of the CaverSTIM system.</p>
         `,
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/mikael-sturny-b2808673',
         email: 'michael@comphya.com'
       },
       'fiona': {
@@ -1528,7 +1537,7 @@
           
           <p>Fiona holds a master's degree in biomedical engineering from EPFL, where she built strong expertise in biomedical technologies and medical device development. She has since gained extensive experience in clinical affairs, supporting innovative medical solutions from concept to clinical validation.</p>
         `,
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/fiona-joseph-1606a219a',
         email: 'fiona@comphya.com'
       },
       'steve': {
@@ -1605,16 +1614,6 @@
           <a href="${member.linkedin}" target="_blank" rel="noopener noreferrer" class="modal-social-link" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
-            </svg>
-          </a>
-        `;
-      }
-      if (member.email) {
-        modalSocial.innerHTML += `
-          <a href="mailto:${member.email}" class="modal-social-link" aria-label="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
           </a>
         `;
