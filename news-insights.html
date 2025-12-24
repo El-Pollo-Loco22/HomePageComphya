@@ -19,6 +19,12 @@
   
   <!-- News Page Specific Styles -->
   <style>
+    /* Logo visibility enhancement */
+    .navbar__logo img.logo__image {
+      filter: brightness(1.2) contrast(1.1);
+      opacity: 1 !important;
+    }
+    
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f9fafb;
@@ -481,19 +487,6 @@
     </p>
   </div>
 
-  <!-- Filter Section -->
-  <div class="filter-section">
-    <div class="filter-buttons">
-      <button class="filter-btn active" data-filter="all">All Articles</button>
-      <button class="filter-btn" data-filter="clinical">Clinical Innovations</button>
-      <button class="filter-btn" data-filter="research">Research & Development</button>
-      <button class="filter-btn" data-filter="publication">Publication and Research</button>
-      <button class="filter-btn" data-filter="patient">Patient Impact</button>
-      <button class="filter-btn" data-filter="industry">Industry Trends</button>
-      <button class="filter-btn" data-filter="regulatory">Regulatory & Compliance</button>
-      <button class="filter-btn" data-filter="company">Company News</button>
-    </div>
-  </div>
 
   <!-- Publications Grid -->
   <div class="publications-grid">

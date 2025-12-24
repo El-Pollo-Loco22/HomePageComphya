@@ -19,6 +19,12 @@
   
   <!-- About Page Specific Styles -->
   <style>
+    /* Logo visibility enhancement */
+    .navbar__logo img.logo__image {
+      filter: brightness(1.2) contrast(1.1);
+      opacity: 1 !important;
+    }
+    
     .about-hero-section {
       background-color: #2c3e50;
       position: relative;
@@ -1249,7 +1255,7 @@
           </div>
           <h3 class="about-team-name">Pim van Wesel</h3>
           <p class="about-team-role">Chief Executive Officer</p>
-          <p class="about-team-bio">Pim is a seasoned MedTech executive with over two decades of global leadership experience across startups and multinationals, including Medtronic, Carefusion, BD and AMF Medical a start-up which he co-led till its acquisition by Tandem Diabetes Care.</p>
+          <p class="about-team-bio">Pim is a seasoned MedTech executive with over two decades of global leadership experience across startups and multinationals, including Medtronic, Carefusion, BD and AMF Medical, a start-up which he co-led till its acquisition by Tandem Diabetes Care.</p>
         </div>
         
         <div class="about-team-card" data-w-id="team-4" data-member-id="rodrigo">
@@ -1288,7 +1294,7 @@
         <div class="about-team-card" data-w-id="team-1" data-member-id="steve">
           <div class="about-team-avatar">ST</div>
           <h3 class="about-team-name">Steve Swinson, PhD</h3>
-          <p class="about-team-role">Board Chairman</p>
+          <p class="about-team-role">Board Member</p>
           <p class="about-team-bio">Senior executive with 35+ years in medical devices and capital equipment, with leadership roles at Medtronic, GE Medical Systems and others, focusing on strategy, market access, and growth.</p>
         </div>
         
@@ -1307,53 +1313,14 @@
           <p class="about-team-role">Board Member & Co-Founder</p>
           <p class="about-team-bio">Professor at EPFL and Director of the Laboratory of Hemodynamics and Cardiovascular Technology; inventor and founder across multiple successful medical device ventures.</p>
         </div>
-      </div>
-    </div>
-    
-    <!-- Scientific Advisory Board -->
-    <div style="max-width: 1050px; margin: 80px auto 0;">
-      <h3 style="font-size: 16px; color: #2c3e50; margin-bottom: 32px; font-family: 'Inter', sans-serif; font-weight: 400; text-align: center;">Clinical Advisory Board</h3>
-      <div class="about-team-grid">
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
-        </div>
         
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
-        </div>
-        
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
-        </div>
-        
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
-        </div>
-        
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
-        </div>
-        
-        <div class="about-team-card placeholder-card" style="opacity: 0.6; cursor: default;">
-          <div class="about-team-avatar" style="background: #e5e7eb; color: #9ca3af;">TBA</div>
-          <h3 class="about-team-name" style="color: #9ca3af;">To Be Announced</h3>
-          <p class="about-team-role" style="color: #9ca3af;">Clinical Advisory Board Member</p>
-          <p class="about-team-bio" style="color: #9ca3af;">Position available for expert advisor.</p>
+        <div class="about-team-card" data-w-id="team-2" data-member-id="amanda">
+          <div class="about-team-avatar">
+            <img src="images/thumbnail_Amanda%20Chang.jpg" alt="Amanda Chang">
+          </div>
+          <h3 class="about-team-name">Amanda Chang</h3>
+          <p class="about-team-role">Board Member</p>
+          <p class="about-team-bio">Senior investment professional with extensive experience in medical technology, capital markets, and strategic business development. Managing Director at Innomedical Technology AG.</p>
         </div>
       </div>
     </div>
@@ -1485,13 +1452,13 @@
         title: 'Chief Operating Officer, Co-Founder, and Board Member',
         photo: 'images/thumbnail_Headshot - noBackground.png',
         initials: 'RF',
-        shortBio: 'Pharmacologist with 50+ publications and multiple patents in sexual medicine and cardiovascular biology; leads strategy, IP and general management at Comphya.',
+        shortBio: 'Pharmacologist with 50+ publications and multiple patents in sexual medicine and cardiovascular biology; oversees the technology development, quality management, regulatory and clinical affairs.',
         fullBio: `
-          <p>Rodrigo Fraga-Silva, PhD, is a pharmacologist and entrepreneur with extensive expertise in sexual medicine, cardiovascular biology, and translational research. With over 50 peer-reviewed publications and multiple patents, Rodrigo has dedicated his career to advancing therapies that address unmet medical needs.</p>
+          <p>Rodrigo Fraga-Silva, PhD, is a pharmacologist and entrepreneur with 20-years of experience bridging scientific innovation and business. With over 60 peer-reviewed publications and as an inventor on multiple patents, Rodrigo has dedicated his career to advancing therapies that address unmet medical needs, leading to the development of successful products.</p>
           
           <p>As Chief Operating Officer, Co-Founder, and Board Member of Comphya, Rodrigo leads the company's strategic direction, intellectual property development, and overall management. His vision is to bring innovative neuromodulation technologies to patients who are unresponsive to conventional treatments for erectile dysfunction.</p>
           
-          <p>Before founding Comphya, Rodrigo held research positions at leading institutions where he contributed to breakthrough discoveries in vascular biology and therapeutic development. His work bridges the gap between fundamental research and clinical application, making him uniquely positioned to guide Comphya's mission.</p>
+          <p>Before founding Comphya, Rodrigo held research positions at leading institutions where he contributed to breakthrough discoveries in vascular biology and therapeutic development, leading to successful commercial products. His work bridges the gap between fundamental research and clinical application, making him uniquely positioned to guide Comphya's mission.</p>
         `,
         linkedin: 'https://www.linkedin.com/in/rodrigo-fraga-silva/',
         email: 'rodrigo@comphya.com'
@@ -1503,7 +1470,7 @@
         initials: 'PM',
         shortBio: 'Pim is a seasoned MedTech executive with over two decades of global leadership experience across startups and multinationals, including Medtronic, BD, and CareFusion.',
         fullBio: `
-          <p>Pim is a seasoned MedTech executive with over two decades of global leadership experience across startups and multinationals, including Medtronic, BD, and CareFusion. Before joining Comphya, he co-led AMF Medical from stealth mode to FDA Breakthrough Device Designation and a successful acquisition by Tandem Diabetes Care.</p>
+          <p>Pim is a seasoned MedTech executive with over two decades of global leadership experience across startups and multinationals, including Medtronic, Carefusion, BD and AMF Medical, a start-up which he co-led till its acquisition by Tandem Diabetes Care.</p>
           
           <p>Pim brings deep expertise in scaling innovation, driving commercialization, and executing strategic exits. He holds an MBA from The International Institute for Management Development (IMD) and executive training from Harvard Medical School.</p>
         `,
@@ -1542,12 +1509,12 @@
       },
       'steve': {
         name: 'Steve Swinson, PhD',
-        title: 'Board Chairman',
+        title: 'Board Member',
         photo: '',
         initials: 'ST',
         shortBio: 'Senior executive with 35+ years in medical devices and capital equipment, with leadership roles at Medtronic, GE Medical Systems and others, focusing on strategy, market access, and growth.',
         fullBio: `
-          <p>Steve Swinson, PhD, brings over 35 years of leadership experience in the medical device and capital equipment industries. As Board Chairman of Comphya, Steve provides strategic guidance, market insights, and governance to help the company achieve its ambitious goals.</p>
+          <p>Steve Swinson, PhD, brings over 35 years of leadership experience in the medical device and capital equipment industries. As a Board Member of Comphya, Steve provides strategic guidance, market insights, and governance to help the company achieve its ambitious goals.</p>
           
           <p>Throughout his distinguished career, Steve has held senior executive roles at leading companies including Medtronic and GE Medical Systems. His expertise spans commercialization strategy, market access, business development, and organizational growth, making him a trusted advisor to the Comphya team.</p>
           
@@ -1568,6 +1535,20 @@
           <p>Professor Stergiopulos is a prolific inventor and serial entrepreneur, having founded and contributed to multiple successful medical device ventures. His research in cardiovascular physiology and biomedical engineering has led to numerous patents and breakthrough technologies.</p>
           
           <p>As a key figure in Comphya's scientific foundation, Nikos ensures that the company's technologies are grounded in rigorous research and cutting-edge science. His mentorship and strategic input are invaluable to Comphya's continued innovation and success.</p>
+        `,
+        linkedin: '',
+        email: 'board@comphya.com'
+      },
+      'amanda': {
+        name: 'Amanda Chang',
+        title: 'Board Member',
+        photo: 'images/thumbnail_Amanda%20Chang.jpg',
+        initials: 'AC',
+        shortBio: 'Senior investment professional with extensive experience in medical technology, capital markets, and strategic business development. Managing Director at Innomedical Technology AG.',
+        fullBio: `
+          <p>Amanda Chang is a senior investment professional with extensive experience in medical technology, capital markets, and strategic business development. She is Managing Director at Innomedical Technology AG, where she leads direct investments in innovative MedTech companies, with a particular focus on cardiovascular and interventional technologies.</p>
+          
+          <p>Amanda has acted as lead investor and board member in multiple European MedTech companies and actively supports portfolio companies in areas including financing strategy, corporate governance, and international market expansion. Her background spans private and public markets, investor relations, and cross-border transactions, bringing a strong global perspective and disciplined investment approach to the Board of Comphya.</p>
         `,
         linkedin: '',
         email: 'board@comphya.com'
