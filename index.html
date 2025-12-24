@@ -287,7 +287,7 @@
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
       <div class="container w-container">
         <div class="navbar__row">
-          <a href="#home" aria-current="page" class="navbar__logo w-nav-brand w--current"><img src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="logo__image" style="transform: scale(1.2);"></a>
+          <a href="#home" aria-current="page" class="navbar__logo w-nav-brand w--current"><img src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="logo__image" style="transform: scale(1.38);"></a>
           <nav role="navigation" class="navbar__menu w-nav-menu">
             <a href="#home" aria-current="page" class="nav__link w-nav-link w--current">Home</a>
             <a href="about.html" class="nav__link w-nav-link">About</a>
@@ -1672,9 +1672,9 @@ h6.split__title ~ .split__items .split__item {
       <div data-w-id="28afbc02-16b4-d343-74c5-1bef0ee592c2" style="opacity:0" class="section__title__effect">
         <div data-wf--section-title--mode="dark-inline" class="section__title__wrap w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="display: flex; flex-direction: column; align-items: flex-start;">
           <h6 class="section__title w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="margin-bottom: 8px; width: 100%;">Supporting Nerve Function at the Source</h6>
-          <div style="display: flex; align-items: flex-start; gap: 24px; width: 100%;">
+          <div class="supporting-nerve-content" style="display: flex; align-items: flex-start; gap: 24px; width: 100%;">
             <div class="section__description w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="flex: 1;">CaverSTIM™ is an investigational, implantable neuromodulation system designed to support cavernous nerve signaling following surgery. By delivering targeted stimulation along the nerve pathways (on the pelvic floor) to the nerves most often affected during radical prostatectomy, CaverSTIM™ aims to enable nerve activity at a time when injury can lead to long-term dysfunction. A programmed daily stimulation routine, generally imperceptible, begins at the crucial time for nerve recovery.</div>
-            <img src="images/thumbnail_Picture CaverSTIM 1.png" alt="CaverSTIM" style="max-width: 400px; width: 100%; height: auto; display: block; flex-shrink: 0;">
+            <img src="images/thumbnail_Picture CaverSTIM 1.png" alt="CaverSTIM" class="supporting-nerve-image" style="max-width: 400px; width: 100%; height: auto; display: block; flex-shrink: 0;">
           </div>
         </div>
       </div>
@@ -1704,12 +1704,39 @@ h6.split__title ~ .split__items .split__item {
           .stack__items {
             grid-template-columns: repeat(2, 1fr) !important;
           }
+          
+          /* Stack text and image vertically on tablet */
+          .supporting-nerve-content {
+            flex-direction: column !important;
+            gap: 24px !important;
+          }
+          
+          .supporting-nerve-image {
+            max-width: 100% !important;
+            width: 100% !important;
+          }
         }
         
         @media (max-width: 767px) {
           .stack__items {
             grid-template-columns: 1fr !important;
             gap: 20px !important;
+          }
+          
+          /* Stack text and image vertically on mobile */
+          .supporting-nerve-content {
+            flex-direction: column !important;
+            gap: 20px !important;
+          }
+          
+          .supporting-nerve-image {
+            max-width: 100% !important;
+            width: 100% !important;
+            margin: 0 auto;
+          }
+          
+          .section__description {
+            width: 100% !important;
           }
         }
       </style>
