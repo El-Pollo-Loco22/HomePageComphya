@@ -94,6 +94,8 @@
       gap: 16px;
       justify-content: center;
       flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
     }
     
     .about-wave {
@@ -426,16 +428,18 @@
     
     .about-cta-content {
       position: relative;
-      z-index: 1;
+      z-index: 2;
       text-align: center;
     }
     
     .about-cta-title {
-      font-size: 16px;
+      font-size: 32px;
       color: white;
       margin-bottom: 16px;
       font-family: 'Inter', sans-serif;
-      font-weight: 400;
+      font-weight: 600;
+      position: relative;
+      z-index: 2;
     }
     
     .about-cta-text {
@@ -447,6 +451,8 @@
       margin-left: auto;
       margin-right: auto;
       font-family: 'Inter', sans-serif;
+      position: relative;
+      z-index: 2;
     }
     
     .about-contact-section {
@@ -1013,7 +1019,7 @@
             <a href="news-insights.html" class="nav__link w-nav-link">News</a>
           </nav>
           <div class="navbar__actions">
-            <a href="index.html#contact" class="nav__action w-inline-block">
+            <a href="contact.html" class="nav__action w-inline-block">
               <div data-wf--light-outline---button--slide-effect="bottom" class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
                 <div class="outline__button__element w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
                   <div class="button__text">Find Out More</div>
@@ -1152,7 +1158,7 @@
       <h1 class="about-hero-title">About Comphya</h1>
       <p class="about-hero-description">Our focus is to deliver an effective, patient-friendly therapy for erectile dysfunction to individuals who require alternatives to oral medication. Comphya is a Swiss medical device company, spun out of the Swiss Federal Technology Institute of Lausanne (EPFL), dedicated to advancing treatment for erectile dysfunction.</p>
       <div class="about-buttons">
-        <a href="index.html#contact" class="link__reset w-inline-block">
+        <a href="contact.html" class="link__reset w-inline-block">
           <div data-wf--primary---button--slide-effect="top" class="primary__button">
             <div class="primary__button__element">
               <div class="primary__button__text">Get in Touch</div>
@@ -1321,13 +1327,7 @@
           <p class="about-team-role">Board Member</p>
           <p class="about-team-bio">Senior investment professional with extensive experience in medical technology, capital markets, and strategic business development. Managing Director at Innomedical Technology AG.</p>
         </div>
-      </div>
-    </div>
-    
-    <!-- Advisors -->
-    <div style="max-width: 1050px; margin: 0 auto 64px;">
-      <h3 style="font-size: 16px; color: #2c3e50; margin-bottom: 32px; font-family: 'Inter', sans-serif; font-weight: 400; text-align: center;">Advisors</h3>
-      <div class="about-team-grid">
+        
         <div class="about-team-card" data-w-id="team-8" data-member-id="chris">
           <div class="about-team-avatar">
             <img src="images/1725578353052.jpg" alt="Chris Cronin">
@@ -1347,7 +1347,7 @@
         <h2 class="about-cta-title">Interested in Collaborating or Learning More?</h2>
         <p class="about-cta-text">We partner with clinicians, researchers, and sponsors who share our focus on meaningful outcomes.</p>
         <div class="about-buttons">
-          <a href="index.html#contact" class="link__reset w-inline-block">
+          <a href="contact.html" class="link__reset w-inline-block">
             <div data-wf--primary---button--slide-effect="top" class="primary__button">
               <div class="primary__button__element">
                 <div class="primary__button__text">Get in Touch</div>
@@ -1377,7 +1377,7 @@
     <div class="about-contact-content">
       <h2 class="about-contact-title">Let's Start a Conversation</h2>
       <p class="about-contact-text">Whether you're a clinician, researcher, or potential partner, we'd love to hear from you. Reach out to discuss collaboration opportunities.</p>
-      <a href="index.html#contact" class="link__reset w-inline-block">
+      <a href="contact.html" class="link__reset w-inline-block">
         <div data-wf--primary---button--slide-effect="top" class="primary__button" style="box-shadow: 0px 25px 50px -12px rgba(0,0,0,0.25);">
           <div class="primary__button__element">
             <div class="primary__button__text">Get in Touch Today</div>
@@ -1474,7 +1474,7 @@
           
           <p>Before founding Comphya, Rodrigo held research positions at leading institutions where he contributed to novel discoveries in vascular biology and therapeutic development, leading to successful commercial products. His work bridges the gap between fundamental research and clinical application, making him uniquely positioned to guide Comphya's mission.</p>
         `,
-        linkedin: 'https://www.linkedin.com/in/rodrigo-fraga-silva/',
+        linkedin: 'https://www.linkedin.com/in/rodrigo-fraga-silva-02a61735',
         email: 'rodrigo@comphya.com'
       },
       'pim': {
@@ -1534,7 +1534,7 @@
           
           <p>Steve's deep understanding of the global medical device landscape, combined with his track record of building successful businesses, positions Comphya for sustainable growth and market leadership in neuromodulation therapies for men's health.</p>
         `,
-        linkedin: 'https://www.linkedin.com/in/steve-swinson-phd-5a63a06/',
+        linkedin: 'https://www.linkedin.com/in/steve-swinson-11556196',
         email: 'board@comphya.com'
       },
       'nikos': {
@@ -1550,7 +1550,7 @@
           
           <p>As a key figure in Comphya's scientific foundation, Nikos ensures that the company's technologies are grounded in rigorous research and cutting-edge science. His mentorship and strategic input are invaluable to Comphya's continued innovation and success.</p>
         `,
-        linkedin: 'https://www.linkedin.com/in/nikolaos-stergiopulos-45281a4/',
+        linkedin: 'https://www.linkedin.com/in/nikos-stergiopoulos-8333275',
         email: 'board@comphya.com'
       },
       'amanda': {
