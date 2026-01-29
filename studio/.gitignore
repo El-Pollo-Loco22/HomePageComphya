@@ -1,0 +1,4 @@
+node_modules
+.sanity
+package-lock.json
+
