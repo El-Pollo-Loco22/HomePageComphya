@@ -2,8 +2,8 @@
 <html data-wf-page="news-insights-page" data-wf-site="68d1b6e69cdb91df35f09497" lang="en">
 <head>
   <meta charset="utf-8">
-  <title>News | Comphya</title>
-  <meta name="description" content="Stay updated with the latest news and developments from Comphya in neuromodulation technology and men's health innovation.">
+  <title>News & Publications | Comphya</title>
+  <meta name="description" content="Stay updated with the latest news, publications, and developments from Comphya in neuromodulation technology and men's health innovation.">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -158,47 +158,6 @@
       transform: translateX(4px);
     }
     
-    /* Filter Section */
-    .filter-section {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 32px 40px;
-    }
-    
-    .filter-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .filter-btn {
-      background: white;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: 50px;
-      padding: 12px 24px;
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
-      font-weight: 500;
-      color: #374151;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      outline: none;
-    }
-    
-    .filter-btn:hover {
-      background: rgba(107, 163, 212, 0.1);
-      border-color: #6ba3d4;
-      color: #6ba3d4;
-    }
-    
-    .filter-btn.active {
-      background: #6ba3d4;
-      border-color: #6ba3d4;
-      color: white;
-      box-shadow: 0 4px 12px rgba(107, 163, 212, 0.3);
-    }
     
     .publication-card {
       display: block;
@@ -236,19 +195,28 @@
         line-height: 1.2;
       }
       
-      .filter-section {
-        padding: 0 24px 32px;
+      .section-divider {
+        margin: 60px auto 40px;
+        padding: 0 24px;
       }
       
-      .filter-buttons {
-        justify-content: flex-start;
-        flex-wrap: wrap;
+      .section-divider-circle {
+        width: 40px;
+        height: 40px;
+        margin: 0 16px;
       }
       
-      .filter-btn {
-        font-size: 14px;
-        padding: 12px 20px;
-        min-height: 44px;
+      .section-divider-circle svg {
+        width: 16px;
+        height: 16px;
+      }
+      
+      .publications-hero-section {
+        padding: 40px 24px 32px;
+      }
+      
+      .publications-hero-title {
+        font-size: clamp(24px, 6vw, 28px);
       }
       
       .publications-grid {
@@ -287,11 +255,6 @@
         font-size: 24px;
       }
       
-      .filter-btn {
-        font-size: 13px;
-        padding: 10px 16px;
-      }
-      
       .publication-card {
         margin-bottom: 16px;
       }
@@ -302,9 +265,73 @@
       }
     }
     
+    /* Section Divider Styles */
+    .section-divider {
+      max-width: 1200px;
+      margin: 80px auto 60px;
+      padding: 0 32px;
+    }
+    
+    .section-divider-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .section-divider-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, rgba(107, 163, 212, 0.3), transparent);
+    }
+    
+    .section-divider-circle {
+      width: 48px;
+      height: 48px;
+      background: white;
+      border: 2px solid #6ba3d4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 24px;
+      box-shadow: 0 4px 12px rgba(107, 163, 212, 0.15);
+    }
+    
+    .section-divider-circle svg {
+      width: 20px;
+      height: 20px;
+      fill: #6ba3d4;
+    }
+    
+    /* Publications Section Styles */
+    .publications-hero-section {
+      background-color: #f9fafb;
+      padding: 60px 32px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    
+    .publications-hero-title {
+      font-size: 36px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+    
+    .publications-hero-description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #374151;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
     /* Touch target optimization */
     @media (hover: none) and (pointer: coarse) {
-      a, button, .nav__link, .menu__toggle, .filter-btn, .publication-card {
+      a, button, .nav__link, .menu__toggle, .publication-card {
         min-height: 44px;
       }
     }
@@ -411,7 +438,7 @@
             <a href="index.html" class="nav__link w-nav-link">Home</a>
             <a href="about.html" class="nav__link w-nav-link">About</a>
             <a href="caverstim.html" class="nav__link w-nav-link">CaverSTIM™</a>
-            <a href="news-insights.html" aria-current="page" class="nav__link w-nav-link w--current">News</a>
+            <a href="news-insights.html" aria-current="page" class="nav__link w-nav-link w--current">News & Publications</a>
           </nav>
           <div class="navbar__actions">
             <a href="contact.html" class="nav__action w-inline-block">
@@ -488,15 +515,41 @@
 
   <!-- Hero Section -->
   <div class="news-hero-section">
-    <h1 class="news-hero-title">News</h1>
+    <h1 class="news-hero-title">News & Publications</h1>
     <p class="news-hero-description">
-      Comphya provides cutting-edge insights and thought leadership on neuromodulation, men's health, and medical device innovation. Our focus is on advancing patient care through evidence-based research and clinical excellence.
+      Stay informed with the latest developments, research insights, and thought leadership from Comphya. Explore our news updates and scientific publications in neuromodulation, men's health, and medical device innovation.
+    </p>
+  </div>
+
+  <!-- News Grid -->
+  <div id="news-container" class="publications-grid">
+    <!-- News items will be loaded here dynamically -->
+  </div>
+
+  <!-- Section Divider -->
+  <div class="section-divider">
+    <div class="section-divider-content">
+      <div class="section-divider-line"></div>
+      <div class="section-divider-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+        </svg>
+      </div>
+      <div class="section-divider-line"></div>
+    </div>
+  </div>
+
+  <!-- Publications Section -->
+  <div class="publications-hero-section">
+    <h2 class="publications-hero-title">Publications</h2>
+    <p class="publications-hero-description">
+      Explore our research publications, white papers, and scientific contributions to the field of neuromodulation and men's health innovation.
     </p>
   </div>
 
   <!-- Publications Grid -->
-  <div id="news-container" class="publications-grid">
-    <!-- News items will be loaded here dynamically -->
+  <div id="publications-container" class="publications-grid">
+    <!-- Publications items will be loaded here dynamically -->
   </div>
 
   <!-- Footer -->

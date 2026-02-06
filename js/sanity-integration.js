@@ -20,9 +20,13 @@ function initClient() {
             useCdn: false, 
         });
         
-        // Determine which page we are on and fetch appropriate news
+        // Determine which page we are on and fetch appropriate content
         if (document.getElementById('news-container')) {
             fetchNewsForListing();
+        }
+        
+        if (document.getElementById('publications-container')) {
+            fetchPublicationsForListing();
         }
         
         if (document.getElementById('latest-news-grid')) {
@@ -69,6 +73,23 @@ async function fetchLatestNewsForHome() {
 }
 
 /**
+ * Fetches all publications items for the Publications section
+ */
+async function fetchPublicationsForListing() {
+    if (!client) return;
+    const query = `*[_type == "publications"] | order(publicationDate desc) {
+        title, description, link, publicationDate
+    }`;
+    try {
+        const publicationItems = await client.fetch(query);
+        renderPublicationsListing(publicationItems);
+    } catch (error) {
+        console.error('Error fetching publications:', error);
+        document.getElementById('publications-container').innerHTML = '<p>Error loading publications.</p>';
+    }
+}
+
+/**
  * Renders news for the main listing page
  */
 function renderNewsListing(newsItems) {
@@ -79,7 +100,39 @@ function renderNewsListing(newsItems) {
         return;
     }
     container.innerHTML = newsItems.map(item => `
-        <div class="publication-card" data-category="${item.category}">
+        <div class="publication-card">
+            <div class="publication-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
+                </svg>
+            </div>
+            <div class="publication-content">
+                <div class="publication-name">${item.category.toUpperCase()}</div>
+                <h3 class="publication-title">${item.title}</h3>
+                <p class="publication-description">${item.description}</p>
+                <a href="${item.link}" target="_blank" class="learn-more-link">
+                    Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    `).join('');
+}
+
+/**
+ * Renders publications for the publications section
+ */
+function renderPublicationsListing(publicationItems) {
+    const container = document.getElementById('publications-container');
+    if (!container) return;
+    if (!publicationItems || publicationItems.length === 0) {
+        container.innerHTML = '<p>No publications available.</p>';
+        return;
+    }
+    container.innerHTML = publicationItems.map(item => `
+        <div class="publication-card">
             <div class="publication-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
@@ -89,7 +142,7 @@ function renderNewsListing(newsItems) {
                 <h3 class="publication-title">${item.title}</h3>
                 <p class="publication-description">${item.description}</p>
                 <a href="${item.link}" target="_blank" class="learn-more-link">
-                    Learn More
+                    View Publication
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M16.172 11L10.808 5.63605L12.222 4.22205L20 12L12.222 19.778L10.808 18.364L16.172 13H4V11H16.172Z"/>
                     </svg>
