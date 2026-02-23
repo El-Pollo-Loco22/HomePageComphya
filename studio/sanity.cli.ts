@@ -4,6 +4,7 @@ export default defineCliConfig({
   api: {
     projectId: 'ws75pj86',
     dataset: 'production'
-  }
+  },
+  studioHost: 'comphya'
 })
 

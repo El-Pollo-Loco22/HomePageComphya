@@ -1,0 +1,140 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Clinical",
+              "value": "clinical"
+            },
+            {
+              "title": "Research",
+              "value": "research"
+            },
+            {
+              "title": "Patient",
+              "value": "patient"
+            },
+            {
+              "title": "Industry",
+              "value": "industry"
+            },
+            {
+              "title": "Regulatory",
+              "value": "regulatory"
+            },
+            {
+              "title": "Company",
+              "value": "company"
+            }
+          ]
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "valid",
+                "constraint": [
+                  "clinical",
+                  "research",
+                  "patient",
+                  "industry",
+                  "regulatory",
+                  "company"
+                ]
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "uri",
+                "constraint": {
+                  "options": {
+                    "scheme": [
+                      "/^http$/",
+                      "/^https$/"
+                    ],
+                    "allowRelative": false,
+                    "relativeOnly": false,
+                    "allowCredentials": false
+                  }
+                }
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "link",
+        "type": "url",
+        "title": "Link (URL)"
+      },
+      {
+        "options": {
+          "dateFormat": "YYYY-MM-DD"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "publicationDate",
+        "type": "date"
+      }
+    ],
+    "name": "news",
+    "type": "document"
+  }
+]

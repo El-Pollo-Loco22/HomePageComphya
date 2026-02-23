@@ -101,15 +101,8 @@ function renderNewsListing(newsItems) {
     }
     container.innerHTML = newsItems.map(item => `
         <div class="publication-card">
-            <div class="publication-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
-                </svg>
-            </div>
             <div class="publication-content">
-                <div class="publication-name">${item.category.toUpperCase()}</div>
                 <h3 class="publication-title">${item.title}</h3>
-                <p class="publication-description">${item.description}</p>
                 <a href="${item.link}" target="_blank" class="learn-more-link">
                     Learn More
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -133,14 +126,8 @@ function renderPublicationsListing(publicationItems) {
     }
     container.innerHTML = publicationItems.map(item => `
         <div class="publication-card">
-            <div class="publication-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3M19 19H5V5H19V19M17 12H7V14H17V12M17 9H7V11H17V9M17 15H7V17H17V15Z"/>
-                </svg>
-            </div>
             <div class="publication-content">
                 <h3 class="publication-title">${item.title}</h3>
-                <p class="publication-description">${item.description}</p>
                 <a href="${item.link}" target="_blank" class="learn-more-link">
                     View Publication
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
