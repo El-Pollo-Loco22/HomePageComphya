@@ -605,6 +605,9 @@
       font-weight: 400;
       box-shadow: 0px 10px 20px rgba(0,0,0,0.15);
       opacity: 0;
+    }
+    
+    .modal-backdrop.show .modal-avatar {
       animation: fadeInScale 0.35s ease-out forwards;
     }
     
@@ -617,6 +620,9 @@
     
     .modal-name-title {
       opacity: 0;
+    }
+    
+    .modal-backdrop.show .modal-name-title {
       animation: fadeInUp 0.35s ease-out 0.1s forwards;
     }
     
@@ -672,8 +678,11 @@
     
     .modal-right {
       opacity: 0;
-      animation: fadeInUp 0.35s ease-out 0.2s forwards;
       color: #000000 !important;
+    }
+    
+    .modal-backdrop.show .modal-right {
+      animation: fadeInUp 0.35s ease-out 0.2s forwards;
     }
     
     .modal-right * {
