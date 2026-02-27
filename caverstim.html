@@ -483,9 +483,12 @@
       font-family: 'Inter', sans-serif;
     }
 
-    /* Device component titles - override global h4 white color for contrast on white background */
-    #tab-specifications h4 {
+    /* Device component cards - darker text for better contrast on white background */
+    #tab-specifications .tab-content-grid + div h4 {
       color: #1a1a1a !important;
+    }
+    #tab-specifications .tab-content-grid + div p {
+      color: #374151 !important;
     }
     
     .tab-content-image {
