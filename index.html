@@ -1,9 +1,12 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Sep 22 2025 20:52:12 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html>
+<!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Mon Sep 22 2025 20:52:12 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="68d1b6e79cdb91df35f09516" data-wf-site="68d1b6e69cdb91df35f09497" lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Comphya | Implantable Neuromodulation for Post-Prostatectomy Nerve Support</title>
-  <meta name="description" content="Comphya is developing CaverSTIM™, a novel implantable neuromodulation system designed to support erectile nerve function after urologic surgery, including prostate cancer surgery.">
+  <meta name="description"
+    content="Comphya is developing CaverSTIM™, a novel implantable neuromodulation system designed to support erectile nerve function after urologic surgery, including prostate cancer surgery.">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -12,24 +15,26 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-  <script type="text/javascript">WebFont.load({  google: {    families: ["Inter:regular,500,600","IBM Plex Mono:regular,500,600"]  }});</script>
-  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <script
+    type="text/javascript">WebFont.load({ google: { families: ["Inter:regular,500,600", "IBM Plex Mono:regular,500,600"] } });</script>
+  <script
+    type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
   <link href="images/UbPK27QY.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/UbPK27QY.png" rel="apple-touch-icon">
-  
+
   <script type="module">
-    import {createClient} from 'https://cdn.skypack.dev/@sanity/client@6.15.11';
+    import { createClient } from 'https://cdn.skypack.dev/@sanity/client@6.15.11';
     window.createSanityClient = createClient;
     window.dispatchEvent(new Event('sanity-ready'));
   </script>
-  
+
   <style>
     /* Logo visibility enhancement */
     .navbar__logo img.logo__image {
       filter: brightness(1.2) contrast(1.1);
       opacity: 1 !important;
     }
-    
+
     /* Translucent navbar background */
     .navbar__wrapper {
       position: fixed;
@@ -42,14 +47,15 @@
       -webkit-backdrop-filter: blur(10px);
       transition: background-color 0.3s ease;
     }
-    
+
     /* Solid background when scrolled */
     .navbar__wrapper.scrolled {
       background-color: rgba(0, 0, 0, 1);
     }
-    
+
     /* Mobile Optimizations */
     @media (max-width: 767px) {
+
       /* Hero button box positioning */
       .hp_button_box {
         position: relative !important;
@@ -59,120 +65,125 @@
         justify-content: center;
         width: 100%;
       }
-      
+
       /* Ensure buttons are touch-friendly */
       .primary__button,
       .outline__button__light {
         min-height: 44px;
         min-width: 44px;
       }
-      
+
       /* Fix container padding on mobile */
       .container {
         padding-left: 20px !important;
         padding-right: 20px !important;
       }
-      
+
       /* Prevent horizontal scroll */
       body {
         overflow-x: hidden;
         width: 100%;
       }
-      
+
       /* Make images responsive */
       img {
         max-width: 100%;
         height: auto;
       }
-      
+
       /* Optimize font sizes for mobile */
       .header__title__one {
         font-size: clamp(28px, 8vw, 48px) !important;
         line-height: 1.2 !important;
       }
-      
+
       /* Partner logos responsive */
       .trusted__logo {
         height: 50px !important;
       }
-      
+
       /* Clinical section mobile adjustments */
       .clinical-results-callout {
         padding: 20px !important;
       }
-      
+
       /* Mission section image responsive */
-      #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
+      #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child>div {
         width: 100% !important;
         max-width: 100% !important;
         height: auto !important;
         min-height: 250px;
       }
-      
+
       /* Timeline adjustments for mobile */
-      .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+      .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child {
         margin-left: 0 !important;
         padding-left: 48px !important;
       }
-      
+
       /* Technology cards stack on mobile */
-      #technology > .w-layout-blockcontainer > div > div:nth-child(2) {
+      #technology>.w-layout-blockcontainer>div>div:nth-child(2) {
         flex-direction: column !important;
         gap: 24px !important;
       }
-      
-      #technology > .w-layout-blockcontainer > div > div:nth-child(2) > div {
+
+      #technology>.w-layout-blockcontainer>div>div:nth-child(2)>div {
         transform: translateY(0) !important;
       }
-      
+
       /* News grid single column on mobile */
       .news-grid-new {
         grid-template-columns: 1fr !important;
       }
-      
+
       /* How it works cards stack */
-      #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+      #how-it-works>.w-layout-blockcontainer>div:nth-child(2) {
         flex-direction: column !important;
         gap: 24px !important;
       }
     }
-    
+
     @media (max-width: 479px) {
+
       /* Extra small mobile adjustments */
       .hp_button_box {
         flex-direction: column;
         align-items: stretch;
       }
-      
+
       .primary__button,
       .outline__button__light {
         width: 100%;
         justify-content: center;
       }
-      
+
       .header__title__one {
         font-size: 24px !important;
       }
-      
+
       /* Smaller padding on very small screens */
       .container {
         padding-left: 16px !important;
         padding-right: 16px !important;
       }
-      
+
       /* Clinical callout smaller text */
       .clinical-results-callout h3 {
         font-size: 18px !important;
       }
-      
+
       .clinical-results-callout li {
         font-size: 15px !important;
       }
     }
-    
+
     /* Touch target optimization */
     @media (hover: none) and (pointer: coarse) {
-      a, button, .nav__link, .menu__toggle {
+
+      a,
+      button,
+      .nav__link,
+      .menu__toggle {
         min-height: 44px;
         min-width: 44px;
         display: inline-flex;
@@ -180,7 +191,7 @@
         justify-content: center;
       }
     }
-    
+
     /* Navigation mobile optimizations */
     @media (max-width: 991px) {
       .w-nav-button {
@@ -188,13 +199,13 @@
         min-width: 44px;
         padding: 12px;
       }
-      
+
       .w-nav-menu {
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
       }
-      
+
       .w-nav-link {
         padding: 16px 20px;
         min-height: 44px;
@@ -204,33 +215,34 @@
         border-radius: 8px;
         margin: 8px 16px;
       }
-      
+
       .navbar__actions {
         width: auto;
       }
     }
-    
+
     /* Make Find Out More button and hamburger menu more visible on mobile */
     @media (max-width: 767px) {
+
       /* Find Out More button - increase visibility */
       .navbar__actions .outline__button__light {
         border: 2px solid rgba(255, 255, 255, 0.9) !important;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
         background: rgba(255, 255, 255, 0.1) !important;
       }
-      
+
       .navbar__actions .outline__button__light .button__text {
         color: rgba(255, 255, 255, 0.95) !important;
         font-weight: 500 !important;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
       }
-      
+
       .navbar__actions .outline__button__light:hover {
         border-color: rgba(255, 255, 255, 1) !important;
         background: rgba(255, 255, 255, 0.2) !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
       }
-      
+
       /* Hamburger menu - increase visibility */
       .menu__toggle.w-nav-button {
         border: 2px solid rgba(255, 255, 255, 0.9) !important;
@@ -241,46 +253,47 @@
         min-width: 44px !important;
         min-height: 44px !important;
       }
-      
+
       .menu__toggle .svg__icon svg {
         fill: rgba(255, 255, 255, 0.95) !important;
         filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)) !important;
       }
-      
+
       .menu__toggle.w-nav-button:hover,
       .menu__toggle.w-nav-button:focus {
         border-color: rgba(255, 255, 255, 1) !important;
         background: rgba(255, 255, 255, 0.2) !important;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
       }
-      
+
       .menu__toggle.w-nav-button.w--open {
         background: rgba(255, 255, 255, 0.25) !important;
         border-color: rgba(255, 255, 255, 1) !important;
       }
-      
+
       /* Ensure navbar background is dark enough for contrast */
       .navbar__wrapper {
         background-color: rgba(0, 0, 0, 0.85) !important;
       }
-      
+
       .navbar__wrapper.scrolled {
         background-color: rgba(0, 0, 0, 0.95) !important;
       }
     }
-    
+
     @media (max-width: 479px) {
+
       /* Even more visibility on very small screens */
       .navbar__actions .outline__button__light {
         border-width: 2.5px !important;
         padding: 10px 16px !important;
       }
-      
+
       .navbar__actions .outline__button__light .button__text {
         font-size: 14px !important;
         font-weight: 600 !important;
       }
-      
+
       .menu__toggle.w-nav-button {
         border-width: 2.5px !important;
         padding: 12px !important;
@@ -288,12 +301,15 @@
     }
   </style>
 </head>
+
 <body>
   <div data-wf--navbar--mode="dark" class="navbar__wrapper">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+      role="banner" class="navbar w-nav">
       <div class="container w-container">
         <div class="navbar__row">
-          <a href="#home" aria-current="page" class="navbar__logo w-nav-brand w--current"><img src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="logo__image" style="transform: scale(1.38);"></a>
+          <a href="#home" aria-current="page" class="navbar__logo w-nav-brand w--current"><img src="images/UbPK27QY.png"
+              loading="lazy" alt="Comphya" class="logo__image" style="transform: scale(1.38);"></a>
           <nav role="navigation" class="navbar__menu w-nav-menu">
             <a href="#home" aria-current="page" class="nav__link w-nav-link w--current">Home</a>
             <a href="about.html" class="nav__link w-nav-link">About</a>
@@ -302,7 +318,8 @@
           </nav>
           <div class="navbar__actions">
             <a href="contact.html" class="nav__action w-inline-block">
-              <div data-wf--light-outline---button--slide-effect="bottom" class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
+              <div data-wf--light-outline---button--slide-effect="bottom"
+                class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
                 <div class="outline__button__element w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc">
                   <div class="button__text">Find Out More</div>
                 </div>
@@ -313,13 +330,17 @@
             </a>
             <div class="menu__toggle w-nav-button">
               <div class="menu__toggle__element">
-                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
+                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"
+                    fill="currentColor">
                     <path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path>
                   </svg></div>
               </div>
               <div class="menu__toggle__element hover">
-                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="currentColor">
-                    <path d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"></path>
+                <div class="svg__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                      d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z">
+                    </path>
                   </svg></div>
               </div>
             </div>
@@ -329,229 +350,268 @@
     </div>
     <div class="releted_codes w-embed">
       <style>
-.outline__button__light .outline__button__element {
-    -webkit-transform: translate(0%, 0%);
-        -ms-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-    -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-    transition: all .3s cubic-bezier(.645, .045, .355, 1);
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="right"] .outline__button__element.hover {
-	left: 100%;
-  top: 0%;
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="bottom"] .outline__button__element.hover {
-	left: 0%;
-  top: -100%;
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="left"] .outline__button__element.hover {
-	left: -100%;
-  top: 0%;
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="top"]:hover .outline__button__element {
-    -webkit-transform: translate(0%, -100%);
-        -ms-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="right"]:hover .outline__button__element {
-    -webkit-transform: translate(-100%, 0%);
-        -ms-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="bottom"]:hover .outline__button__element {
-    -webkit-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
-}
-.outline__button__light[data-wf--light-outline---button--slide-effect="left"]:hover .outline__button__element {
-    -webkit-transform: translate(100%, 0%);
-        -ms-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-}
-.primary__button .primary__button__element {
-    -webkit-transform: translate(0%, 0%);
-        -ms-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-    -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
-    transition: all .3s cubic-bezier(.645, .045, .355, 1);
-		opacity: 1;
-}
-.primary__button:hover .primary__button__element {
-	opacity: 0;
-}
-.primary__button .primary__button__element.hover {
-	opacity: 0;
-}
-.primary__button:hover .primary__button__element.hover {
-	opacity: 1;
-}
-.primary__button[data-wf--primary---button--slide-effect="right"] .primary__button__element.hover {
-    left: 100%;
-    top: 0%;
-}
-.primary__button[data-wf--primary---button--slide-effect="bottom"] .primary__button__element.hover {
-    left: 0%;
-    top: -100%;
-}
-.primary__button[data-wf--primary---button--slide-effect="left"] .primary__button__element.hover {
-    left: -100%;
-    top: 0%;
-}
-.primary__button[data-wf--primary---button--slide-effect="top"]:hover .primary__button__element {
-    -webkit-transform: translate(0%, -100%);
-        -ms-transform: translate(0%, -100%);
-            transform: translate(0%, -100%);
-}
-.primary__button[data-wf--primary---button--slide-effect="right"]:hover .primary__button__element {
-    -webkit-transform: translate(-100%, 0%);
-        -ms-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-}
-.primary__button[data-wf--primary---button--slide-effect="bottom"]:hover .primary__button__element {
-    -webkit-transform: translate(0%, 100%);
-        -ms-transform: translate(0%, 100%);
-            transform: translate(0%, 100%);
-}
-.primary__button[data-wf--primary---button--slide-effect="left"]:hover .primary__button__element {
-    -webkit-transform: translate(100%, 0%);
-        -ms-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-}
-.menu__toggle .menu__toggle__element {
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-}
-.menu__toggle.w--open .menu__toggle__element {
-    -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-            transform: translateY(-100%);
-}
-.arrow__link .arrow__link__icon {
-    transform: translate(0%, 0%);
-}
-.arrow__link:hover .arrow__link__icon {
-    transform: translate(100%, -100%);
-}
-p:last-child {
-	margin-bottom: 0px;
-}
-ul, ol {
-    padding: 0px 0px 0px 20px;
-    margin: 0px 0px 24px 0px;
-}
-li ul,
-li ol {
-    margin: 16px 0px 0px 0px;
-}
-li:last-child {
-    margin-bottom: 0px;
-}
-[data-wf--navbar--mode="light"] .outline__button__light {
-    box-shadow: inset 0 0 0 1px var(--black);
-    color: var(--black);
-}
-[data-wf--navbar--mode="light"] .outline__button__light .outline__button__element.hover {
-    background-color: var(--black);
-    color: var(--white);
-}
-h1.split__title ~ .split__items .split__item {
-    height: 1.2em;
-    font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
-}
-h2.split__title ~ .split__items .split__item {
-    height: 1.3em;
-    font-size: clamp(2rem, 4vw + .5rem, 3rem);
-}
-h3.split__title ~ .split__items .split__item {
-    height: 1.3em;
-    font-size: clamp(1.5rem, 3vw + .3rem, 2rem);
-}
-h4.split__title ~ .split__items .split__item {
-    height: 1.4em;
-    font-size: clamp(1.3rem, 2.5vw + .3rem, 1.75rem);
-}
-h5.split__title ~ .split__items .split__item {
-    height: 1.4em;
-    font-size: clamp(1.1rem, 2vw + .2rem, 1.5rem);
-}
-h6.split__title ~ .split__items .split__item {
-    height: 1.5em;
-    font-size: clamp(1rem, 1.5vw + .2rem, 1.25rem);
-}
+        .outline__button__light .outline__button__element {
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+        }
 
-/* Discover CaverSTIM Button - Blue with Fill Animation */
-.discover-button {
-    box-shadow: inset 0 0 0 2px #6ba3d4 !important;
-    color: white !important;
-    position: relative;
-    overflow: hidden;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="right"] .outline__button__element.hover {
+          left: 100%;
+          top: 0%;
+        }
 
-.discover-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: #6ba3d4;
-    transition: left 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    z-index: 0;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="bottom"] .outline__button__element.hover {
+          left: 0%;
+          top: -100%;
+        }
 
-.discover-button:hover::before {
-    left: 0;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="left"] .outline__button__element.hover {
+          left: -100%;
+          top: 0%;
+        }
 
-.discover-button .outline__button__element {
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s ease;
-    color: white !important;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="top"]:hover .outline__button__element {
+          -webkit-transform: translate(0%, -100%);
+          -ms-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+        }
 
-.discover-button .outline__button__element.hover {
-    color: white !important;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="right"]:hover .outline__button__element {
+          -webkit-transform: translate(-100%, 0%);
+          -ms-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+        }
 
-.discover-button:hover .outline__button__element {
-    color: white !important;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="bottom"]:hover .outline__button__element {
+          -webkit-transform: translate(0%, 100%);
+          -ms-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+        }
 
-.discover-button:hover .outline__button__element.hover {
-    color: white !important;
-}
+        .outline__button__light[data-wf--light-outline---button--slide-effect="left"]:hover .outline__button__element {
+          -webkit-transform: translate(100%, 0%);
+          -ms-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+        }
 
-.discover-button:hover {
-    box-shadow: inset 0 0 0 2px #6ba3d4 !important;
-}
+        .primary__button .primary__button__element {
+          -webkit-transform: translate(0%, 0%);
+          -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+          -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          -o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          transition: all .3s cubic-bezier(.645, .045, .355, 1);
+          opacity: 1;
+        }
 
-.discover-button .button__text {
-    color: white !important;
-    font-weight: 500;
-}
+        .primary__button:hover .primary__button__element {
+          opacity: 0;
+        }
 
-.discover-button .outline__button__element.hover {
-    transform: translateY(0%) !important;
-    opacity: 1 !important;
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-}
-</style>
+        .primary__button .primary__button__element.hover {
+          opacity: 0;
+        }
+
+        .primary__button:hover .primary__button__element.hover {
+          opacity: 1;
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="right"] .primary__button__element.hover {
+          left: 100%;
+          top: 0%;
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="bottom"] .primary__button__element.hover {
+          left: 0%;
+          top: -100%;
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="left"] .primary__button__element.hover {
+          left: -100%;
+          top: 0%;
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="top"]:hover .primary__button__element {
+          -webkit-transform: translate(0%, -100%);
+          -ms-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="right"]:hover .primary__button__element {
+          -webkit-transform: translate(-100%, 0%);
+          -ms-transform: translate(-100%, 0%);
+          transform: translate(-100%, 0%);
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="bottom"]:hover .primary__button__element {
+          -webkit-transform: translate(0%, 100%);
+          -ms-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+        }
+
+        .primary__button[data-wf--primary---button--slide-effect="left"]:hover .primary__button__element {
+          -webkit-transform: translate(100%, 0%);
+          -ms-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+        }
+
+        .menu__toggle .menu__toggle__element {
+          -webkit-transform: translateY(0%);
+          -ms-transform: translateY(0%);
+          transform: translateY(0%);
+        }
+
+        .menu__toggle.w--open .menu__toggle__element {
+          -webkit-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+        }
+
+        .arrow__link .arrow__link__icon {
+          transform: translate(0%, 0%);
+        }
+
+        .arrow__link:hover .arrow__link__icon {
+          transform: translate(100%, -100%);
+        }
+
+        p:last-child {
+          margin-bottom: 0px;
+        }
+
+        ul,
+        ol {
+          padding: 0px 0px 0px 20px;
+          margin: 0px 0px 24px 0px;
+        }
+
+        li ul,
+        li ol {
+          margin: 16px 0px 0px 0px;
+        }
+
+        li:last-child {
+          margin-bottom: 0px;
+        }
+
+        [data-wf--navbar--mode="light"] .outline__button__light {
+          box-shadow: inset 0 0 0 1px var(--black);
+          color: var(--black);
+        }
+
+        [data-wf--navbar--mode="light"] .outline__button__light .outline__button__element.hover {
+          background-color: var(--black);
+          color: var(--white);
+        }
+
+        h1.split__title~.split__items .split__item {
+          height: 1.2em;
+          font-size: clamp(2.5rem, 5vw + 1rem, 4rem);
+        }
+
+        h2.split__title~.split__items .split__item {
+          height: 1.3em;
+          font-size: clamp(2rem, 4vw + .5rem, 3rem);
+        }
+
+        h3.split__title~.split__items .split__item {
+          height: 1.3em;
+          font-size: clamp(1.5rem, 3vw + .3rem, 2rem);
+        }
+
+        h4.split__title~.split__items .split__item {
+          height: 1.4em;
+          font-size: clamp(1.3rem, 2.5vw + .3rem, 1.75rem);
+        }
+
+        h5.split__title~.split__items .split__item {
+          height: 1.4em;
+          font-size: clamp(1.1rem, 2vw + .2rem, 1.5rem);
+        }
+
+        h6.split__title~.split__items .split__item {
+          height: 1.5em;
+          font-size: clamp(1rem, 1.5vw + .2rem, 1.25rem);
+        }
+
+        /* Discover CaverSTIM Button - Blue with Fill Animation */
+        .discover-button {
+          box-shadow: inset 0 0 0 2px #6ba3d4 !important;
+          color: white !important;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .discover-button::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: #6ba3d4;
+          transition: left 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+          z-index: 0;
+        }
+
+        .discover-button:hover::before {
+          left: 0;
+        }
+
+        .discover-button .outline__button__element {
+          position: relative;
+          z-index: 1;
+          transition: color 0.3s ease;
+          color: white !important;
+        }
+
+        .discover-button .outline__button__element.hover {
+          color: white !important;
+        }
+
+        .discover-button:hover .outline__button__element {
+          color: white !important;
+        }
+
+        .discover-button:hover .outline__button__element.hover {
+          color: white !important;
+        }
+
+        .discover-button:hover {
+          box-shadow: inset 0 0 0 2px #6ba3d4 !important;
+        }
+
+        .discover-button .button__text {
+          color: white !important;
+          font-weight: 500;
+        }
+
+        .discover-button .outline__button__element.hover {
+          transform: translateY(0%) !important;
+          opacity: 1 !important;
+          position: relative !important;
+          top: 0 !important;
+          left: 0 !important;
+        }
+      </style>
     </div>
   </div>
   <section id="home" data-w-id="f0c757c5-5f98-ec41-ed2e-45e09757d989" class="header__section__one index__up dark_bg">
     <div class="header__image__one"></div>
     <div class="header__content__one container">
-      <h1 data-w-id="d3a21e8e-0304-2b02-46a9-ba15c566d447" class="header__title__one">Restoring Erectile Nerve Function at the Source</h1>
+      <h1 data-w-id="d3a21e8e-0304-2b02-46a9-ba15c566d447" class="header__title__one">Restoring Erectile Nerve Function
+        at the Source</h1>
       <div data-w-id="81d7f092-dfe7-4c0b-4bb0-3367cbf63c9b" style="opacity:0" class="header__one__info">
-        <p>The first implantable neuromodulation system designed to support natural erectile function recovery, following prostate cancer surgery - when nerve damage is most common. Restoring erectile nerve function at the source.</p>
+        <p>The first implantable neuromodulation system designed to support natural erectile function recovery,
+          following prostate cancer surgery - when nerve damage is most common. restoring erectile nerve function at the
+          source.</p>
       </div>
-      <div class="hp_button_box" style="position:absolute; bottom:3%; left: var(--lg); display:flex; gap:16px; flex-wrap: wrap;">
+      <div class="hp_button_box"
+        style="position:absolute; bottom:3%; left: var(--lg); display:flex; gap:16px; flex-wrap: wrap;">
         <a href="#about" class="link__reset w-inline-block">
           <div data-wf--primary---button--slide-effect="top" class="primary__button">
             <div class="primary__button__element">
@@ -563,7 +623,8 @@ h6.split__title ~ .split__items .split__item {
           </div>
         </a>
         <a href="caverstim.html" class="link__reset w-inline-block">
-          <div data-wf--light-outline---button--slide-effect="bottom" class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc discover-button">
+          <div data-wf--light-outline---button--slide-effect="bottom"
+            class="outline__button__light w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc discover-button">
             <div class="outline__button__element w-variant-0bcbff43-0ee7-5bca-0c5a-24a1f7d845cc hover">
               <div class="button__text">Discover CaverSTIM</div>
             </div>
@@ -574,7 +635,8 @@ h6.split__title ~ .split__items .split__item {
   </section>
   <section id="supporters" class="trusted__partners__section white__bg index__up">
     <div class="w-layout-blockcontainer container w-container">
-      <div class="section__title__three" style="margin-bottom: 40px; text-align: center; display: flex; justify-content: center; width: 100%;">
+      <div class="section__title__three"
+        style="margin-bottom: 40px; text-align: center; display: flex; justify-content: center; width: 100%;">
         <div style="text-align: center;">With support from:</div>
       </div>
       <div class="partner__logo__wrapper">
@@ -585,7 +647,8 @@ h6.split__title ~ .split__items .split__item {
           <img src="images/fit-1.png" alt="FIT" class="trusted__logo">
           <img src="images/EVC-Award-Winners-1.png" alt="EVC Award Winners" class="trusted__logo">
           <img src="images/epfl.png" alt="EPFL" class="trusted__logo">
-          <img src="images/comphya-swiss-innovation-agency-partners-02-02.png" alt="Swiss Innovation Agency" class="trusted__logo">
+          <img src="images/comphya-swiss-innovation-agency-partners-02-02.png" alt="Swiss Innovation Agency"
+            class="trusted__logo">
           <img src="images/canton.png" alt="Canton de Vaud" class="trusted__logo">
           <img src="images/IMD Logo.png" alt="IMD" class="trusted__logo">
           <!-- Duplicate set for seamless loop -->
@@ -595,7 +658,8 @@ h6.split__title ~ .split__items .split__item {
           <img src="images/fit-1.png" alt="FIT" class="trusted__logo">
           <img src="images/EVC-Award-Winners-1.png" alt="EVC Award Winners" class="trusted__logo">
           <img src="images/epfl.png" alt="EPFL" class="trusted__logo">
-          <img src="images/comphya-swiss-innovation-agency-partners-02-02.png" alt="Swiss Innovation Agency" class="trusted__logo">
+          <img src="images/comphya-swiss-innovation-agency-partners-02-02.png" alt="Swiss Innovation Agency"
+            class="trusted__logo">
           <img src="images/canton.png" alt="Canton de Vaud" class="trusted__logo">
           <img src="images/IMD Logo.png" alt="IMD" class="trusted__logo">
         </div>
@@ -606,7 +670,7 @@ h6.split__title ~ .split__items .split__item {
               width: 100%;
               position: relative;
             }
-            
+
             .partner__logos {
               display: flex;
               animation: scroll-logos 25s linear infinite;
@@ -614,7 +678,7 @@ h6.split__title ~ .split__items .split__item {
               gap: 60px;
               align-items: center;
             }
-            
+
             .trusted__logo {
               height: 70px;
               width: auto;
@@ -624,36 +688,37 @@ h6.split__title ~ .split__items .split__item {
               flex-shrink: 0;
               max-width: 100%;
             }
-            
+
             .trusted__logo:hover {
               opacity: 1;
               filter: grayscale(0%);
             }
-            
+
             @keyframes scroll-logos {
-              0% { 
-                transform: translateX(0); 
+              0% {
+                transform: translateX(0);
               }
-              100% { 
-                transform: translateX(-50%); 
+
+              100% {
+                transform: translateX(-50%);
               }
             }
-            
+
             @media (max-width: 767px) {
               .trusted__logo {
                 height: 50px !important;
               }
-              
+
               .partner__logos {
                 gap: 40px !important;
               }
             }
-            
+
             @media (max-width: 479px) {
               .trusted__logo {
                 height: 40px !important;
               }
-              
+
               .partner__logos {
                 gap: 30px !important;
               }
@@ -669,47 +734,70 @@ h6.split__title ~ .split__items .split__item {
         <div class="section-header">
           <div class="overline">CLINICAL DEVELOPMENT</div>
           <h2><span class="bold">Rooted in robust science.</span><br>Focused on Sexual Health Outcomes.</h2>
-          <p class="subtitle" style="white-space: nowrap; font-size: clamp(12px, 2.5vw, 18px);">CaverSTIM™ is currently in clinical trials at leading research centers across the world.</p>
+          <p class="subtitle" style="white-space: nowrap; font-size: clamp(12px, 2.5vw, 18px);">CaverSTIM™ is currently
+            in clinical trials at leading research centers across the world.</p>
         </div>
 
         <!-- Early Recovery Signals Callout -->
-        <div class="clinical-results-callout" style="background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.1); border-left: 4px solid #6BA3D4; border-radius: 12px; padding: 40px; margin-bottom: 48px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
-          <h3 style="font-family: Inter, sans-serif; font-size: 26px; font-weight: 700; color: #1a1a1a; margin: 0 0 24px 0; letter-spacing: -0.5px; line-height: 1.3;">Early Recovery Signals — First-In-Human Study</h3>
-          <ul style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 18px;">
-            <li style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
-              <div style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
+        <div class="clinical-results-callout"
+          style="background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.1); border-left: 4px solid #6BA3D4; border-radius: 12px; padding: 40px; margin-bottom: 48px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);">
+          <h3
+            style="font-family: Inter, sans-serif; font-size: 26px; font-weight: 700; color: #1a1a1a; margin: 0 0 24px 0; letter-spacing: -0.5px; line-height: 1.3;">
+            Early Recovery Signals — First-In-Human Study</h3>
+          <ul
+            style="list-style: none; padding: 0; margin: 0 0 24px 0; display: flex; flex-direction: column; gap: 18px;">
+            <li
+              style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
+              <div
+                style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </div>
-              <span><strong style="color: #6BA3D4; font-weight: 700;">90%</strong> <strong style="color: #1a1a1a; font-weight: 600;">erectile function recovery</strong> by 9 months</span>
+              <span><strong style="color: #6BA3D4; font-weight: 700;">90%</strong> <strong
+                  style="color: #1a1a1a; font-weight: 600;">erectile function recovery</strong> by 9 months</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
-              <div style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
+            <li
+              style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
+              <div
+                style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </div>
-              <span>Most regained <strong style="color: #1a1a1a; font-weight: 600;">spontaneous function within weeks</strong></span>
+              <span>Most regained <strong style="color: #1a1a1a; font-weight: 600;">spontaneous function within
+                  weeks</strong></span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
-              <div style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
+            <li
+              style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
+              <div
+                style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </div>
               <span><strong style="color: #1a1a1a; font-weight: 600;">Zero safety concerns</strong> to date</span>
             </li>
-            <li style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
-              <div style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
+            <li
+              style="display: flex; align-items: flex-start; gap: 14px; font-family: Inter, sans-serif; font-size: 18px; line-height: 1.6; color: #374151;">
+              <div
+                style="width: 24px; height: 24px; min-width: 24px; background: rgba(107, 163, 212, 0.12); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 3px;">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 4L5.5 9.5L3 7" stroke="#6BA3D4" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
                 </svg>
               </div>
-              <span>Without <strong style="color: #1a1a1a; font-weight: 600;">PDE5 drugs</strong> or <strong style="color: #1a1a1a; font-weight: 600;">invasive therapies</strong></span>
+              <span>Without <strong style="color: #1a1a1a; font-weight: 600;">PDE5 drugs</strong> or <strong
+                  style="color: #1a1a1a; font-weight: 600;">invasive therapies</strong></span>
             </li>
           </ul>
-          <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.5; color: #6b7280; margin: 0; font-style: italic; padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.08);">Clinical trials are ongoing to validate long-term safety and efficacy, including pilot studies in the U.S. at Johns Hopkins University School of Medicine and in Australia at the Royal Melbourne Hospital</p>
+          <p
+            style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.5; color: #6b7280; margin: 0; font-style: italic; padding-top: 20px; border-top: 1px solid rgba(0, 0, 0, 0.08);">
+            Clinical trials are ongoing to validate long-term safety and efficacy, including pilot studies in the U.S.
+            at Johns Hopkins University School of Medicine and in Australia at the Royal Melbourne Hospital</p>
         </div>
 
         <!-- Responsive Styles for Clinical Callout -->
@@ -719,39 +807,46 @@ h6.split__title ~ .split__items .split__item {
               .clinical-results-callout {
                 padding: 32px !important;
               }
+
               .clinical-results-callout h3 {
                 font-size: 22px !important;
               }
+
               .clinical-results-callout li {
                 font-size: 17px !important;
               }
             }
-            
+
             @media (max-width: 767px) {
               .clinical-results-callout {
                 padding: 24px !important;
                 border-left-width: 3px !important;
               }
+
               .clinical-results-callout h3 {
                 font-size: 20px !important;
                 margin-bottom: 20px !important;
               }
+
               .clinical-results-callout ul {
                 gap: 16px !important;
               }
+
               .clinical-results-callout li {
                 font-size: 16px !important;
                 gap: 12px !important;
               }
+
               .clinical-results-callout p {
                 font-size: 14px !important;
               }
             }
-            
+
             @media (max-width: 479px) {
               .clinical-results-callout {
                 padding: 20px !important;
               }
+
               .clinical-results-callout h3 {
                 font-size: 18px !important;
               }
@@ -760,108 +855,128 @@ h6.split__title ~ .split__items .split__item {
         </div>
 
         <div class="disclaimer">
-          <p class="disclaimer-text">CaverSTIM™ is an investigational device. Safety and efficacy are being evaluated in clinical trials. This device is not approved for commercial use.</p>
+          <p class="disclaimer-text">CaverSTIM™ is an investigational device. Safety and efficacy are being evaluated in
+            clinical trials. This device is not approved for commercial use.</p>
         </div>
       </div>
     </div>
   </section>
   <section id="about" class="section__padding white__bg index__up">
     <div class="w-layout-blockcontainer container w-container" style="max-width: 1200px;">
-      
+
       <!-- Mission Header -->
       <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 48px;">
         <div style="width: 8px; height: 8px; background-color: #6ba3d4; border-radius: 50%;"></div>
-        <h6 style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #2d3e4f; margin: 0;">
+        <h6
+          style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #2d3e4f; margin: 0;">
           Our Mission
         </h6>
       </div>
-      
+
       <!-- Mission Content with Image -->
       <div style="display: flex; gap: 48px; align-items: center;">
-        
+
         <!-- Mission Image -->
         <div style="flex: 0 0 477px; position: relative; max-width: 100%;">
-          <div style="position: relative; width: 100%; max-width: 477px; height: 400px; border-radius: 24px; overflow: hidden; box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);">
-            <img src="images/AdobeStock_472568937.jpeg" 
-                 loading="lazy" 
-                 alt="People having a conversation about medical care and treatment options" 
-                 style="width: 100%; height: 100%; object-fit: cover; display: block;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(45, 62, 79, 0.1) 0%, rgba(0, 0, 0, 0) 100%);"></div>
+          <div
+            style="position: relative; width: 100%; max-width: 477px; height: 400px; border-radius: 24px; overflow: hidden; box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);">
+            <img src="images/AdobeStock_472568937.jpeg" loading="lazy"
+              alt="People having a conversation about medical care and treatment options"
+              style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div
+              style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(45, 62, 79, 0.1) 0%, rgba(0, 0, 0, 0) 100%);">
+            </div>
           </div>
         </div>
-        
+
         <!-- Mission Text -->
         <div style="flex: 1; position: relative;">
           <div style="position: relative; padding-left: 16px;">
-            <div style="position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, #6ba3d4 0%, rgba(0, 0, 0, 0) 100%); border-radius: 50px;"></div>
-            <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 24px 0; letter-spacing: -0.44px;">
-              <strong style="color: #1a1a1a;">Mission:</strong> To restore sexual health and quality of life for men facing nerve-related erectile dysfunction, starting with prostate cancer surgery.
+            <div
+              style="position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: linear-gradient(to bottom, #6ba3d4 0%, rgba(0, 0, 0, 0) 100%); border-radius: 50px;">
+            </div>
+            <p
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 24px 0; letter-spacing: -0.44px;">
+              <strong style="color: #1a1a1a;">Mission:</strong> To restore sexual health and quality of life for men
+              facing nerve-related erectile dysfunction, starting with prostate cancer surgery.
             </p>
-            <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 40px 0; letter-spacing: -0.44px;">
-              <strong style="color: #1a1a1a;">Vision:</strong> To redefine the standard of care for nerve-related erectile dysfunction, and to expand the use of neuromodulation across urologic conditions caused by disrupted nerve signaling.
+            <p
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 40px 0; letter-spacing: -0.44px;">
+              <strong style="color: #1a1a1a;">Vision:</strong> To redefine the standard of care for nerve-related
+              erectile dysfunction, and to expand the use of neuromodulation across urologic conditions caused by
+              disrupted nerve signaling.
             </p>
-            <a href="#technology" style="display: inline-flex; align-items: center; gap: 12px; background: #6ba3d4; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-family: Inter, sans-serif; font-size: 16px; font-weight: 400; letter-spacing: -0.31px; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.3), 0px 4px 6px -4px rgba(107, 163, 212, 0.3); transition: all 0.3s ease;">
+            <a href="#technology"
+              style="display: inline-flex; align-items: center; gap: 12px; background: #6ba3d4; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-family: Inter, sans-serif; font-size: 16px; font-weight: 400; letter-spacing: -0.31px; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.3), 0px 4px 6px -4px rgba(107, 163, 212, 0.3); transition: all 0.3s ease;">
               Learn About Comphya
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 12L10 8L6 4" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </a>
           </div>
         </div>
-        
+
       </div>
-      
+
       <!-- Responsive Styles -->
       <style>
         #about a[href="#technology"]:hover {
           transform: translateY(-2px);
           box-shadow: 0px 15px 25px -5px rgba(107, 163, 212, 0.4), 0px 6px 10px -6px rgba(107, 163, 212, 0.4);
         }
-        
+
         @media (max-width: 991px) {
           #about .w-layout-blockcontainer {
             max-width: 100%;
             padding-left: 24px;
             padding-right: 24px;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) {
+
+          #about .w-layout-blockcontainer>div:nth-child(2) {
             flex-direction: column !important;
             gap: 32px !important;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child {
+
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child {
             flex: 0 0 auto !important;
             width: 100% !important;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
+
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child>div {
             width: 100% !important;
             max-width: 477px;
             margin: 0 auto;
           }
         }
-        
+
         @media (max-width: 767px) {
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child>div {
             height: auto !important;
             min-height: 300px;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:last-child p {
+
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:last-child p {
             font-size: 16px !important;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child {
+
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child {
             max-width: 100% !important;
           }
         }
-        
+
         @media (max-width: 479px) {
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:first-child > div {
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:first-child>div {
             height: auto !important;
             min-height: 250px;
             border-radius: 16px !important;
           }
-          #about .w-layout-blockcontainer > div:nth-child(2) > div:last-child p {
+
+          #about .w-layout-blockcontainer>div:nth-child(2)>div:last-child p {
             font-size: 15px !important;
             margin-bottom: 24px !important;
           }
+
           #about a[href="#technology"] {
             font-size: 14px !important;
             padding: 12px 24px !important;
@@ -869,7 +984,7 @@ h6.split__title ~ .split__items .split__item {
           }
         }
       </style>
-      
+
     </div>
     <div class="releted_codes w-embed w-script">
       <script defer="" src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-numbercount@1/numbercount.js"></script>
@@ -878,296 +993,390 @@ h6.split__title ~ .split__items .split__item {
   <section class="section__padding white__bg index__up">
     <div class="w-layout-blockcontainer container w-container" style="max-width: 1200px;">
       <div style="display: flex; gap: 64px; position: relative;">
-        
+
         <!-- Left Column: Content -->
         <div style="flex: 0 0 469px;">
-          
+
           <!-- Header -->
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 48px;">
             <div style="width: 8px; height: 8px; background-color: #6ba3d4; border-radius: 50%; flex-shrink: 0;"></div>
-            <h6 style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #2d3e4f; margin: 0; line-height: 1.4;">
+            <h6
+              style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #2d3e4f; margin: 0; line-height: 1.4;">
               Prostate cancer survival shouldn't have to cost men their sexual function.
             </h6>
           </div>
-          
+
           <!-- Text Content -->
           <div style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 48px;">
-            <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 12px 0; letter-spacing: -0.44px;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 12px 0; letter-spacing: -0.44px;">
               Even with nerve-sparing surgery:
             </p>
-            <ul style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 24px 0; padding-left: 24px; letter-spacing: -0.44px;">
+            <ul
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #4a5c6d; margin: 0 0 24px 0; padding-left: 24px; letter-spacing: -0.44px;">
               <li style="margin-bottom: 8px;">60–70% of men lose erectile function</li>
               <li style="margin-bottom: 8px;">Only 16% recover baseline function</li>
               <li style="margin-bottom: 8px;">Medications mostly don't work when nerves are damaged</li>
               <li style="margin-bottom: 8px;">Pumps, prostheses & injections are invasive and poorly tolerated</li>
             </ul>
-            <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #6ba3d4; margin: 0; letter-spacing: -0.44px; font-weight: 500;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #6ba3d4; margin: 0; letter-spacing: -0.44px; font-weight: 500;">
               Men deserve a restorative solution, beyond disease treatment.
             </p>
-            <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #4a5c6d; margin: 16px 0 0 0; letter-spacing: -0.44px; font-style: italic;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #4a5c6d; margin: 16px 0 0 0; letter-spacing: -0.44px; font-style: italic;">
               CaverSTIM™ aims to offer that.
             </p>
           </div>
-          
+
           <!-- Medical Device Image -->
-          <div style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(229, 231, 235, 0.5);">
-            <img src="images/Artist-conception-human-nerve-cell.webp" 
-                 loading="lazy" 
-                 alt="Artist conception of human nerve cell showing CaverSTIM technology integration" 
-                 style="width: 100%; height: auto; display: block; object-fit: cover;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(45, 62, 79, 0.2) 0%, rgba(0, 0, 0, 0) 100%);"></div>
+          <div
+            style="position: relative; border-radius: 24px; overflow: hidden; border: 1px solid rgba(229, 231, 235, 0.5);">
+            <img src="images/Artist-conception-human-nerve-cell.webp" loading="lazy"
+              alt="Artist conception of human nerve cell showing CaverSTIM technology integration"
+              style="width: 100%; height: auto; display: block; object-fit: cover;">
+            <div
+              style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(45, 62, 79, 0.2) 0%, rgba(0, 0, 0, 0) 100%);">
+            </div>
           </div>
-          
+
         </div>
-        
+
         <!-- Right Column: Timeline -->
         <div style="flex: 1; position: relative; padding-left: 32px;">
-          
+
           <!-- Timeline Line -->
-          <div style="position: absolute; left: 0; top: 32px; width: 2px; height: calc(100% - 80px); background: linear-gradient(to bottom, #e5e7eb 0%, #d1d5dc 50%, #e5e7eb 100%);"></div>
-          <div style="position: absolute; left: 0; top: 32px; width: 2px; height: calc(100% - 32px); background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%);"></div>
-          <div style="position: absolute; left: -8px; bottom: 48px; width: 16px; height: 16px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.4), 0px 4px 6px -4px rgba(107, 163, 212, 0.4);"></div>
-          
+          <div
+            style="position: absolute; left: 0; top: 32px; width: 2px; height: calc(100% - 80px); background: linear-gradient(to bottom, #e5e7eb 0%, #d1d5dc 50%, #e5e7eb 100%);">
+          </div>
+          <div
+            style="position: absolute; left: 0; top: 32px; width: 2px; height: calc(100% - 32px); background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%);">
+          </div>
+          <div
+            style="position: absolute; left: -8px; bottom: 48px; width: 16px; height: 16px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.4), 0px 4px 6px -4px rgba(107, 163, 212, 0.4);">
+          </div>
+
           <!-- Timeline Steps -->
           <div style="display: flex; flex-direction: column; gap: 104px;">
-            
+
             <!-- Step 01 -->
             <div style="position: relative; display: flex; gap: 49px; align-items: flex-start;">
-              <div style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
-                <span style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">01</span>
+              <div
+                style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">01</span>
               </div>
-              <div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
-                <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
+              <div
+                style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
+                <h3
+                  style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
                   Before Surgery – The Diagnosis
                 </h3>
-                <p style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
                   Understanding the Challenge
                 </p>
-                <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
-                  Prostate cancer is one of the most common cancers in men, with over 400,000 prostatectomies performed each year across the U.S. and Europe. For many, the goal beyond survival is quality of life.
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
+                  Prostate cancer is one of the most common cancers in men, with over 400,000 prostatectomies performed
+                  each year across the U.S. and Europe. For many, the goal beyond survival is quality of life.
                 </p>
               </div>
             </div>
-            
+
             <!-- Step 02 -->
             <div style="position: relative; display: flex; gap: 49px; align-items: flex-start;">
-              <div style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
-                <span style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">02</span>
+              <div
+                style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">02</span>
               </div>
-              <div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
-                <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
+              <div
+                style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
+                <h3
+                  style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
                   During Surgery – Nerve Damage Risk
                 </h3>
-                <p style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
                   The Critical Moment
                 </p>
-                <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
-                  Even with nerve-sparing robotic techniques, microscopic trauma to the cavernous nerves is often unavoidable. Studies show 60-70% of men experience erectile dysfunction following surgery, and fewer than 1 in 5 recover baseline function.
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
+                  Even with nerve-sparing robotic techniques, microscopic trauma to the cavernous nerves is often
+                  unavoidable. Studies show 60-70% of men experience erectile dysfunction following surgery, and fewer
+                  than 1 in 5 recover baseline function.
                 </p>
               </div>
             </div>
-            
+
             <!-- Step 03 -->
             <div style="position: relative; display: flex; gap: 49px; align-items: flex-start;">
-              <div style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
-                <span style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">03</span>
+              <div
+                style="position: absolute; left: -64px; top: 0; width: 64px; height: 64px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">03</span>
               </div>
-              <div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
-                <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
+              <div
+                style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
+                <h3
+                  style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
                   After Surgery – The Recovery Gap
                 </h3>
-                <p style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
                   The Current Reality
                 </p>
-                <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
-                  Nerve regeneration can take months or years, and for many, it never fully returns. Current options like pills, injections, pumps and prostheses focus on symptom management — not nerve healing. The impact goes beyond the physical: over 50% of men with post-surgical ED experience depression or loss of confidence, and 1 in 3 report a diminished sense of identity.
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
+                  Nerve regeneration can take months or years, and for many, it never fully returns. Current options
+                  like pills, injections, pumps and prostheses focus on symptom management — not nerve healing. The
+                  impact goes beyond the physical: over 50% of men with post-surgical ED experience depression or loss
+                  of confidence, and 1 in 3 report a diminished sense of identity.
                 </p>
               </div>
             </div>
-            
+
             <!-- Step 04 -->
             <div style="position: relative; display: flex; gap: 49px; align-items: flex-start;">
-              <div style="position: absolute; left: -80px; top: -16px; width: 96px; height: 96px; background: rgba(107, 163, 212, 0.2); border-radius: 50%; opacity: 0.4;"></div>
-              <div style="position: absolute; left: -67.2px; top: -3.2px; width: 70.4px; height: 70.4px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
-                <span style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">04</span>
+              <div
+                style="position: absolute; left: -80px; top: -16px; width: 96px; height: 96px; background: rgba(107, 163, 212, 0.2); border-radius: 50%; opacity: 0.4;">
               </div>
-              <div style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
-                <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
+              <div
+                style="position: absolute; left: -67.2px; top: -3.2px; width: 70.4px; height: 70.4px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 2px solid #6ba3d4; flex-shrink: 0;">
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 18px; font-weight: 400; color: white; letter-spacing: -0.44px;">04</span>
+              </div>
+              <div
+                style="flex: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 8px; padding-left: 16px;">
+                <h3
+                  style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0; letter-spacing: -0.45px;">
                   The Vision – A New Path Forward
                 </h3>
-                <p style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.4; color: #6ba3d4; margin: 0; letter-spacing: -0.15px;">
                   Reimagining Recovery
                 </p>
-                <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
-                  CaverSTIM™ is being developed to enable nerve healing from the critical moment - following surgery - when intervention may have the greatest potential to preserve function and improve long-term outcomes.
+                <p
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0; letter-spacing: -0.23px;">
+                  CaverSTIM™ is being developed to enable nerve healing from the critical moment - following surgery -
+                  when intervention may have the greatest potential to preserve function and improve long-term outcomes.
                 </p>
               </div>
             </div>
-            
+
           </div>
         </div>
-        
+
       </div>
-      
+
       <!-- Disclaimer -->
       <div style="margin-top: 64px; padding-top: 32px; border-top: 1px solid #e5e7eb;">
-        <p style="font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6; color: #6b7c8d; margin: 0; text-align: center; font-style: italic;">
+        <p
+          style="font-family: Inter, sans-serif; font-size: 14px; line-height: 1.6; color: #6b7c8d; margin: 0; text-align: center; font-style: italic;">
           CaverSTIM™ is an investigational device not approved for commercial use.
         </p>
       </div>
-      
+
       <!-- Responsive Styles -->
       <style>
         @media (max-width: 991px) {
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child {
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child {
             flex-direction: column !important;
             gap: 48px !important;
           }
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:first-child {
+
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:first-child {
             flex: 0 0 auto !important;
             width: 100% !important;
           }
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child {
             padding-left: 0 !important;
             margin-left: 32px;
           }
         }
-        
+
         @media (max-width: 767px) {
           .section__padding.white__bg.index__up .w-layout-blockcontainer {
             padding-left: 20px !important;
             padding-right: 20px !important;
           }
+
           .section__padding.white__bg.index__up h6 {
             font-size: 13px !important;
           }
+
           .section__padding.white__bg.index__up p {
             font-size: 16px !important;
           }
+
           .section__padding.white__bg.index__up h3 {
             font-size: 18px !important;
           }
+
           /* Timeline adjustments for mobile */
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child {
             margin-left: 0 !important;
             padding-left: 48px !important;
           }
+
           /* Timeline circles adjust position */
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div > div > div:first-child {
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child>div>div>div:first-child {
             left: -48px !important;
           }
         }
-        
+
         @media (max-width: 479px) {
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child {
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child {
             margin-left: 0 !important;
             padding-left: 40px !important;
           }
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div:nth-child(3) > div {
+
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child>div:nth-child(3)>div {
             gap: 32px !important;
           }
+
           /* Smaller timeline circles on very small screens */
-          .section__padding.white__bg.index__up .w-layout-blockcontainer > div:first-child > div:last-child > div > div > div:first-child {
+          .section__padding.white__bg.index__up .w-layout-blockcontainer>div:first-child>div:last-child>div>div>div:first-child {
             width: 48px !important;
             height: 48px !important;
             left: -40px !important;
           }
         }
       </style>
-      
+
     </div>
   </section>
-  <section id="how-it-works" class="section__padding index__up" style="background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);">
+  <section id="how-it-works" class="section__padding index__up"
+    style="background: linear-gradient(to bottom, #f9fafb 0%, #ffffff 100%);">
     <div class="w-layout-blockcontainer container w-container" style="max-width: 1200px;">
-      
+
       <!-- Header -->
       <div style="text-align: center; margin-bottom: 64px;">
         <div style="display: flex; justify-content: center; margin-bottom: 32px;">
           <div style="width: 8px; height: 8px; background-color: #6ba3d4; border-radius: 50%;"></div>
         </div>
-        <h2 style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 400; line-height: 1.1; color: #2d3e4f; margin: 0 0 16px 0; letter-spacing: 0.37px;">
+        <h2
+          style="font-family: Inter, sans-serif; font-size: 36px; font-weight: 400; line-height: 1.1; color: #2d3e4f; margin: 0 0 16px 0; letter-spacing: 0.37px;">
           Our Approach
         </h2>
-        <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #6b7c8d; margin: 0; letter-spacing: -0.44px;">
-          Our technology activates the body's own neural pathways, aiming to restore erectile function in a way that feels natural rather than contrived.
+        <p
+          style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.55; color: #6b7c8d; margin: 0; letter-spacing: -0.44px;">
+          Our technology activates the body's own neural pathways, aiming to restore erectile function in a way that
+          feels natural rather than contrived.
         </p>
       </div>
 
       <!-- Simplified Explainer Callout Box -->
-      <div style="background: linear-gradient(135deg, #6ba3d4 0%, #5a92c3 100%); border-radius: 16px; padding: 40px; margin-bottom: 48px; box-shadow: 0 10px 30px rgba(107, 163, 212, 0.3);">
-        <h3 style="font-family: Inter, sans-serif; font-size: 24px; font-weight: 500; color: white; margin: 0 0 24px 0; letter-spacing: -0.5px; text-align: center;">How CaverSTIM™ Works</h3>
+      <div
+        style="background: linear-gradient(135deg, #6ba3d4 0%, #5a92c3 100%); border-radius: 16px; padding: 40px; margin-bottom: 48px; box-shadow: 0 10px 30px rgba(107, 163, 212, 0.3);">
+        <h3
+          style="font-family: Inter, sans-serif; font-size: 24px; font-weight: 500; color: white; margin: 0 0 24px 0; letter-spacing: -0.5px; text-align: center;">
+          How CaverSTIM™ Works</h3>
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
           <li style="display: flex; align-items: flex-start; gap: 12px;">
-            <div style="width: 28px; height: 28px; min-width: 28px; background: rgba(255, 255, 255, 0.2); border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+            <div
+              style="width: 28px; height: 28px; min-width: 28px; background: rgba(255, 255, 255, 0.2); border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 5L6.5 11.5L3 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 5L6.5 11.5L3 8" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
-            <span style="font-family: Inter, sans-serif; font-size: 16px; line-height: 1.5; color: white; font-weight: 400;">Implanted quickly and easily during prostate cancer surgery: electrodes put in place near the pelvic nerves…</span>
+            <span
+              style="font-family: Inter, sans-serif; font-size: 16px; line-height: 1.5; color: white; font-weight: 400;">Implanted
+              quickly and easily during prostate cancer surgery: electrodes put in place near the pelvic nerves…</span>
           </li>
           <li style="display: flex; align-items: flex-start; gap: 12px;">
-            <div style="width: 28px; height: 28px; min-width: 28px; background: rgba(255, 255, 255, 0.2); border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+            <div
+              style="width: 28px; height: 28px; min-width: 28px; background: rgba(255, 255, 255, 0.2); border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M13 5L6.5 11.5L3 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13 5L6.5 11.5L3 8" stroke="white" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
             </div>
-            <span style="font-family: Inter, sans-serif; font-size: 16px; line-height: 1.5; color: white; font-weight: 400;">… and connected to a slim implantable pulse generator implanted under the skin in the lower abdomen. A programmed daily neurostimulation routine, below the sensory threshold, supports nerve rehabilitation after surgery.</span>
+            <span
+              style="font-family: Inter, sans-serif; font-size: 16px; line-height: 1.5; color: white; font-weight: 400;">…
+              and connected to a slim implantable pulse generator implanted under the skin in the lower abdomen. A
+              programmed daily neurostimulation routine, below the sensory threshold, supports nerve rehabilitation
+              after surgery.</span>
           </li>
         </ul>
       </div>
 
       <!-- Cards Container -->
       <div class="how-it-works-cards" style="display: flex; gap: 32px; align-items: stretch;">
-        
+
         <!-- Card 1 -->
-        <div style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
-          <div style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
-            <span style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">1</span>
+        <div
+          style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
+          <div
+            style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
+            <span
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">1</span>
           </div>
-          <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
+          <h3
+            style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
             Addressing the Root Cause
           </h3>
-          <h4 style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
+          <h4
+            style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
             Supporting Nerve Health at the Source
           </h4>
-            <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
-            Instead of treating symptoms after injury, our focus is on protecting and activating those nerves most at risk from prostatectomy — the cavernous nerves essential to erectile function.
+          <p
+            style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
+            Instead of treating symptoms after injury, our focus is on protecting and activating those nerves most at
+            risk from prostatectomy — the cavernous nerves essential to erectile function.
           </p>
           <div style="border-top: 1px solid #f3f4f6; margin-top: 24px; padding-top: 4px;">
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
-          <div style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
-            <span style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">2</span>
+        <div
+          style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
+          <div
+            style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
+            <span
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">2</span>
           </div>
-          <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
+          <h3
+            style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
             Timing That Matters
           </h3>
-          <h4 style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
+          <h4
+            style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
             Intervening When Recovery Potential Is Highest
           </h4>
-          <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
-            CaverSTIM™ engages nerve pathways during the critical biologic window following surgery — when stimulation may have the greatest impact on long-term recovery.
+          <p
+            style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
+            CaverSTIM™ engages nerve pathways during the critical biologic window following surgery — when stimulation
+            may have the greatest impact on long-term recovery.
           </p>
           <div style="border-top: 1px solid #f3f4f6; margin-top: 24px; padding-top: 4px;">
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
-          <div style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
-            <span style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">3</span>
+        <div
+          style="flex: 1; background: white; border: 1px solid rgba(229, 231, 235, 0.6); border-radius: 16px; padding: 33px; display: flex; flex-direction: column;">
+          <div
+            style="width: 56px; height: 56px; background: linear-gradient(to bottom, #6ba3d4 0%, #5a92c3 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0px 10px 15px -3px rgba(107, 163, 212, 0.2), 0px 4px 6px -4px rgba(107, 163, 212, 0.2); margin-bottom: 24px;">
+            <span
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; color: white; line-height: 1.4; letter-spacing: -0.45px;">3</span>
           </div>
-          <h3 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
+          <h3
+            style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: #2d3e4f; margin: 0 0 12px 0; letter-spacing: -0.45px;">
             A Smarter, Integrated Solution
           </h3>
-          <h4 style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
+          <h4
+            style="font-family: Inter, sans-serif; font-size: 15px; font-weight: 400; line-height: 1.5; color: #6ba3d4; margin: 0 0 24px 0; letter-spacing: -0.23px;">
             Built for Real Clinical Use
           </h4>
-          <p style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
-            Designed to fit seamlessly into standard surgical workflows, CaverSTIM™ integrates neuromodulation technology without adding complexity or additional invasive procedures.
+          <p
+            style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #6b7c8d; margin: 0 0 auto 0; letter-spacing: -0.23px;">
+            Designed to fit seamlessly into standard surgical workflows, CaverSTIM™ integrates neuromodulation
+            technology without adding complexity or additional invasive procedures.
           </p>
           <div style="border-top: 1px solid #f3f4f6; margin-top: 24px; padding-top: 4px;">
           </div>
@@ -1183,56 +1392,69 @@ h6.split__title ~ .split__items .split__item {
             padding-left: 24px;
             padding-right: 24px;
           }
+
           /* Stack cards on tablet */
           .how-it-works-cards {
             flex-direction: column !important;
             gap: 24px !important;
           }
-          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+
+          #how-it-works>.w-layout-blockcontainer>div:nth-child(2) {
             flex-direction: column !important;
             gap: 24px !important;
           }
         }
+
         @media (max-width: 767px) {
           #how-it-works h2 {
             font-size: 28px !important;
           }
+
           /* Stack cards on mobile */
           .how-it-works-cards {
             flex-direction: column !important;
             gap: 24px !important;
           }
-          .how-it-works-cards > div {
+
+          .how-it-works-cards>div {
             width: 100% !important;
             flex: 1 1 100% !important;
           }
-          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+
+          #how-it-works>.w-layout-blockcontainer>div:nth-child(2) {
             flex-direction: column !important;
             gap: 24px !important;
           }
-          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) > div {
+
+          #how-it-works>.w-layout-blockcontainer>div:nth-child(2)>div {
             padding: 24px !important;
           }
+
           /* How it works callout responsive */
-          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) ul {
+          #how-it-works>.w-layout-blockcontainer>div:nth-child(2) ul {
             grid-template-columns: 1fr !important;
           }
         }
+
         @media (max-width: 479px) {
           #how-it-works h2 {
             font-size: 24px !important;
           }
+
           #how-it-works h3 {
             font-size: 18px !important;
           }
+
           /* Cards stack on small mobile */
           .how-it-works-cards {
             gap: 20px !important;
           }
-          .how-it-works-cards > div {
+
+          .how-it-works-cards>div {
             padding: 20px !important;
           }
-          #how-it-works > .w-layout-blockcontainer > div:nth-child(2) {
+
+          #how-it-works>.w-layout-blockcontainer>div:nth-child(2) {
             padding: 20px !important;
           }
         }
@@ -1243,135 +1465,183 @@ h6.split__title ~ .split__items .split__item {
   <section id="technology" class="section__padding index__up" style="background-color: #3a5061;">
     <div class="w-layout-blockcontainer container w-container" style="max-width: 1200px;">
       <div data-w-id="d7282ff9-fbea-da9d-7ca3-10af16c37ecc" style="opacity: 1;" class="relative">
-        
+
         <!-- Header Section -->
         <div style="margin-bottom: 60px;">
           <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;">
             <div style="width: 8px; height: 8px; background-color: #6ba3d4; border-radius: 50%;"></div>
-            <div style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #a8c5d8;">
+            <div
+              style="font-family: Inter, sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 0.55px; text-transform: uppercase; color: #a8c5d8;">
               Pioneering a Smarter Surgical Experience
             </div>
           </div>
-          <p style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #f0f5f8; margin: 0; max-width: 730px;">
-            Designed to fit easily into existing work flows — helping providers, patients, and payors rethink male sexual health as part of cancer treatment.
+          <p
+            style="font-family: Inter, sans-serif; font-size: 18px; line-height: 1.625; color: #f0f5f8; margin: 0; max-width: 730px;">
+            Designed to fit easily into existing work flows — helping providers, patients, and payors rethink male
+            sexual health as part of cancer treatment.
           </p>
         </div>
 
         <!-- Cards Container -->
         <div style="display: flex; gap: 32px; margin-bottom: 48px; align-items: flex-start; position: relative;">
-          
+
           <!-- Card 1: For Providers -->
-          <div class="technology-card" style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(74, 99, 117, 0.5); border-radius: 16px; padding: 33px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
-            <h4 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
+          <div class="technology-card"
+            style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(74, 99, 117, 0.5); border-radius: 16px; padding: 33px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+            <h4
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
               For Providers
             </h4>
-            <p style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
               Built for seamless surgical adoption
             </p>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Robot-assisted prostatectomy</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Robot-assisted
+                  prostatectomy</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">No added surgical session or major workflow change</span>
+                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">No
+                  added surgical session or major workflow change</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Complements nerve-sparing techniques</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Complements
+                  nerve-sparing techniques</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Supports patient recovery and satisfaction</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Supports
+                  patient recovery and satisfaction</span>
               </li>
             </ul>
           </div>
 
           <!-- Card 2: For Patients -->
-          <div class="technology-card" style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 16px; padding: 33px; position: relative; transform: translateY(-16px); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(107, 163, 212, 0.3); transition: all 0.3s ease;">
-            <h4 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
+          <div class="technology-card"
+            style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 16px; padding: 33px; position: relative; transform: translateY(-16px); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 6px 20px rgba(107, 163, 212, 0.3); transition: all 0.3s ease;">
+            <h4
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
               For Patients
             </h4>
-            <p style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
               A discreet therapy designed to support natural recovery — not lifelong treatment.
             </p>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Placed during surgery</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Placed
+                  during surgery</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">No daily pills, pumps, or injections</span>
+                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">No
+                  daily pills, pumps, or injections</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Designed to empower intimacy and confidence</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">Designed
+                  to empower intimacy and confidence</span>
               </li>
             </ul>
           </div>
 
           <!-- Card 3: For Insurers -->
-          <div class="technology-card" style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(74, 99, 117, 0.5); border-radius: 16px; padding: 33px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
-            <h4 style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
+          <div class="technology-card"
+            style="flex: 1; background: rgba(74, 99, 117, 0.3); border: 1px solid rgba(74, 99, 117, 0.5); border-radius: 16px; padding: 33px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.3); transition: all 0.3s ease;">
+            <h4
+              style="font-family: Inter, sans-serif; font-size: 20px; font-weight: 400; line-height: 1.4; color: white; margin: 0 0 16px 0; padding-bottom: 13px; border-bottom: 1px solid rgba(74, 99, 117, 0.5);">
               For Payers
             </h4>
-            <p style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
+            <p
+              style="font-family: Inter, sans-serif; font-size: 16px; font-weight: 500; line-height: 1.4; color: #6ba3d4; margin: 0 0 24px 0;">
               A restorative approach to reduce long-term ED treatment burden
             </p>
             <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 20px;">
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">74% of men use PDE5 prescriptions post-RP</span>
+                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">74%
+                  of men use PDE5 prescriptions post-RP</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">ED can double work impairment and mental health</span>
+                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">ED
+                  can double work impairment and mental health</span>
               </li>
               <li style="display: flex; align-items: flex-start; gap: 12px;">
-                <div style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
+                <div
+                  style="width: 20px; height: 20px; min-width: 20px; background: rgba(107, 163, 212, 0.2); border: 1px solid rgba(107, 163, 212, 0.4); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px;">
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 3L4.5 8.5L2 6" stroke="#6ba3d4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round" />
                   </svg>
                 </div>
-                <span style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">CaverSTIM™ targets the nerve injury at the source</span>
+                <span
+                  style="font-family: Inter, sans-serif; font-size: 15px; line-height: 1.625; color: #f0f5f8;">CaverSTIM™
+                  targets the nerve injury at the source</span>
               </li>
             </ul>
           </div>
@@ -1382,8 +1652,12 @@ h6.split__title ~ .split__items .split__item {
         <div style="text-align: center; margin-top: 40px;">
           <a href="contact.html" class="link__reset w-inline-block">
             <div data-wf--primary---button--slide-effect="top" class="primary__button">
-              <div class="primary__button__element"><div class="primary__button__text">Find Out More</div></div>
-              <div class="primary__button__element hover"><div class="primary__button__text">Find Out More</div></div>
+              <div class="primary__button__element">
+                <div class="primary__button__text">Find Out More</div>
+              </div>
+              <div class="primary__button__element hover">
+                <div class="primary__button__text">Find Out More</div>
+              </div>
             </div>
           </a>
         </div>
@@ -1397,38 +1671,43 @@ h6.split__title ~ .split__items .split__item {
             box-shadow: 0 12px 48px rgba(107, 163, 212, 0.5), 0 6px 24px rgba(107, 163, 212, 0.4) !important;
             transform: translateY(-4px);
           }
-          
+
           /* Preserve the second card's elevated position on hover */
           #technology .technology-card:nth-child(2):hover {
             transform: translateY(-20px) !important;
           }
-          
+
           #technology .technology-card:hover h4 {
             border-bottom-color: rgba(107, 163, 212, 0.7) !important;
           }
-          
+
           @media (max-width: 991px) {
             #technology .w-layout-blockcontainer {
               max-width: 100%;
               padding-left: 24px;
               padding-right: 24px;
             }
-            #technology > .w-layout-blockcontainer > div > div:nth-child(2) {
+
+            #technology>.w-layout-blockcontainer>div>div:nth-child(2) {
               flex-direction: column !important;
               gap: 24px !important;
             }
-            #technology > .w-layout-blockcontainer > div > div:nth-child(2) > div {
+
+            #technology>.w-layout-blockcontainer>div>div:nth-child(2)>div {
               width: 100% !important;
               transform: translateY(0) !important;
             }
           }
+
           @media (max-width: 479px) {
-            #technology > .w-layout-blockcontainer > div > div:nth-child(2) > div {
+            #technology>.w-layout-blockcontainer>div>div:nth-child(2)>div {
               padding: 24px !important;
             }
+
             #technology h4 {
               font-size: 18px !important;
             }
+
             #technology li span {
               font-size: 14px !important;
             }
@@ -1438,35 +1717,38 @@ h6.split__title ~ .split__items .split__item {
       </div>
     </div>
   </section>
-  
+
   <!-- News Section -->
   <section id="news" class="section__padding index__up" style="background-color: #f8f9fa;">
     <div class="w-layout-blockcontainer container w-container">
       <!-- Latest Updates Badge -->
       <div style="text-align: center; margin-bottom: 24px;">
         <div class="news-badge">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="display: inline-block; vertical-align: middle; margin-right: 8px;">
-            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="#155dfc" stroke="#155dfc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+            style="display: inline-block; vertical-align: middle; margin-right: 8px;">
+            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="#155dfc" stroke="#155dfc" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <span>LATEST UPDATES</span>
         </div>
       </div>
-      
+
       <!-- News Grid -->
       <div id="latest-news-grid" class="news-grid-new">
         <!-- Articles will be loaded from Sanity -->
       </div>
-      
+
       <!-- Read All News Button -->
       <div style="text-align: center; margin-top: 48px;">
         <a href="news-insights.html" class="news-button-cta" style="text-decoration: none;">
           <span>Read All News</span>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" style="margin-left: 8px;">
-            <path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5 12h14M12 5l7 7-7 7" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </a>
       </div>
-      
+
       <!-- Embedded Styles -->
       <div class="w-embed">
         <style>
@@ -1483,31 +1765,31 @@ h6.split__title ~ .split__items .split__item {
             text-transform: uppercase;
             font-family: Inter, sans-serif;
           }
-          
+
           .news-grid-new {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 24px;
             margin-bottom: 48px;
           }
-          
+
           .news-card-new {
             background: white;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
             position: relative;
             min-height: 180px;
             display: flex;
             flex-direction: column;
           }
-          
+
           .news-card-new:hover {
             transform: translateY(-4px);
-            box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.15), 0px 10px 10px -5px rgba(0,0,0,0.1);
+            box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.15), 0px 10px 10px -5px rgba(0, 0, 0, 0.1);
           }
-          
+
           .news-card-content {
             padding: 24px;
             flex: 1;
@@ -1515,11 +1797,11 @@ h6.split__title ~ .split__items .split__item {
             flex-direction: column;
             gap: 16px;
           }
-          
+
           .news-category {
             display: none;
           }
-          
+
           .news-article-title {
             font-size: 16px;
             font-weight: 400;
@@ -1530,13 +1812,13 @@ h6.split__title ~ .split__items .split__item {
             font-family: Inter, sans-serif;
             flex: 1;
           }
-          
+
           .news-meta {
             display: flex;
             align-items: center;
             gap: 8px;
           }
-          
+
           .news-date-text {
             font-size: 16px;
             color: #6a7282;
@@ -1544,13 +1826,13 @@ h6.split__title ~ .split__items .split__item {
             letter-spacing: -0.3125px;
             font-family: Inter, sans-serif;
           }
-          
+
           .news-card-border {
             height: 4px;
             background: linear-gradient(90deg, #51a2ff 0%, #155dfc 100%);
             width: 100%;
           }
-          
+
           .news-button-cta {
             display: inline-flex;
             align-items: center;
@@ -1562,36 +1844,36 @@ h6.split__title ~ .split__items .split__item {
             font-weight: 400;
             letter-spacing: -0.3125px;
             font-family: Inter, sans-serif;
-            box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
           }
-          
+
           .news-button-cta:hover {
             background: linear-gradient(90deg, #2b7fff 0%, #155dfc 100%);
-            box-shadow: 0px 20px 25px -5px rgba(21,93,252,0.3), 0px 10px 10px -5px rgba(21,93,252,0.2);
+            box-shadow: 0px 20px 25px -5px rgba(21, 93, 252, 0.3), 0px 10px 10px -5px rgba(21, 93, 252, 0.2);
             transform: translateY(-2px);
           }
-          
+
           @media (max-width: 991px) {
             .news-grid-new {
               gap: 20px;
             }
           }
-          
+
           @media (max-width: 767px) {
             .news-grid-new {
               grid-template-columns: 1fr;
               gap: 16px;
             }
-            
+
             .news-card-content {
               padding: 20px;
             }
-            
+
             .news-article-title {
               font-size: 15px;
             }
-            
+
             .news-button-cta {
               padding: 14px 28px;
               font-size: 15px;
@@ -1599,33 +1881,44 @@ h6.split__title ~ .split__items .split__item {
           }
         </style>
       </div>
-      
+
     </div>
   </section>
-  
+
   <section class="section__padding white__bg index__up">
     <div class="w-layout-blockcontainer container w-container">
       <div data-w-id="28afbc02-16b4-d343-74c5-1bef0ee592c2" style="opacity:0" class="section__title__effect">
-        <div data-wf--section-title--mode="dark-inline" class="section__title__wrap w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="display: flex; flex-direction: column; align-items: flex-start;">
-          <h6 class="section__title w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="margin-bottom: 8px; width: 100%;">Supporting Nerve Function at the Source</h6>
+        <div data-wf--section-title--mode="dark-inline"
+          class="section__title__wrap w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf"
+          style="display: flex; flex-direction: column; align-items: flex-start;">
+          <h6 class="section__title w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf"
+            style="margin-bottom: 8px; width: 100%;">Supporting Nerve Function at the Source</h6>
           <div class="supporting-nerve-content" style="display: flex; align-items: flex-start; gap: 24px; width: 100%;">
-            <div class="section__description w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="flex: 1;">CaverSTIM™ is an investigational, implantable neuromodulation system designed to support cavernous nerve signaling following surgery. By delivering targeted stimulation along the nerve pathways (on the pelvic floor) to the nerves most often affected during radical prostatectomy, CaverSTIM™ aims to enable nerve activity at a time when injury can lead to long-term dysfunction. A programmed daily stimulation routine, generally imperceptible, begins at the crucial time for nerve recovery.</div>
-            <img src="images/Theproduct.png" alt="CaverSTIM" class="supporting-nerve-image" style="max-width: 400px; width: 100%; height: auto; display: block; flex-shrink: 0;">
+            <div class="section__description w-variant-60e836d9-1418-36f6-3869-8f7b9ea1e8bf" style="flex: 1;">CaverSTIM™
+              is an investigational, implantable neuromodulation system designed to support cavernous nerve signaling
+              following surgery. By delivering targeted stimulation along the nerve pathways (on the pelvic floor) to
+              the nerves most often affected during radical prostatectomy, CaverSTIM™ aims to enable nerve activity at a
+              time when injury can lead to long-term dysfunction. A programmed daily stimulation routine, generally
+              imperceptible, begins at the crucial time for nerve recovery.</div>
+            <img src="images/Theproduct.png" alt="CaverSTIM" class="supporting-nerve-image"
+              style="max-width: 400px; width: 100%; height: auto; display: block; flex-shrink: 0;">
           </div>
         </div>
       </div>
       <div data-wf--space--size="8xl" class="space w-variant-f3eec6e8-6c6d-185b-db1c-fcf6414eeea8"></div>
-      <div class="w-layout-grid stack__items stack-items-readable" style="grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div class="w-layout-grid stack__items stack-items-readable"
+        style="grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
         <div class="stack__item">
           <div>
             <h5 class="stack__title">Implantable Electrode Array</h5>
             <p>Placed during surgery to align with nerve pathways, no additional procedure needed.</p>
-                </div>
-              </div>
+          </div>
+        </div>
         <div class="stack__item">
           <div>
             <h5 class="stack__title">Subcutaneous Pulse Generator</h5>
-            <p>A small, rechargeable unit placed under the skin, programmed by clinicians and tailored to patient needs.</p>
+            <p>A small, rechargeable unit placed under the skin, programmed by clinicians and tailored to patient needs.
+            </p>
           </div>
         </div>
         <div class="stack__item">
@@ -1640,37 +1933,37 @@ h6.split__title ~ .split__items .split__item {
           .stack__items {
             grid-template-columns: repeat(2, 1fr) !important;
           }
-          
+
           /* Stack text and image vertically on tablet */
           .supporting-nerve-content {
             flex-direction: column !important;
             gap: 24px !important;
           }
-          
+
           .supporting-nerve-image {
             max-width: 100% !important;
             width: 100% !important;
           }
         }
-        
+
         @media (max-width: 767px) {
           .stack__items {
             grid-template-columns: 1fr !important;
             gap: 20px !important;
           }
-          
+
           /* Stack text and image vertically on mobile */
           .supporting-nerve-content {
             flex-direction: column !important;
             gap: 20px !important;
           }
-          
+
           .supporting-nerve-image {
             max-width: 100% !important;
             width: 100% !important;
             margin: 0 auto;
           }
-          
+
           .section__description {
             width: 100% !important;
           }
@@ -1685,13 +1978,18 @@ h6.split__title ~ .split__items .split__item {
       <div class="w-layout-blockcontainer container w-container">
         <div class="space ten__xl"></div>
         <div class="footer-content-section" style="padding: 60px 0;">
-          <div class="footer__slide__text__wrapper" style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 30px;"><img src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="footer_overlay_logo_img" style="max-height: 48px; width: auto; display: block; margin: 0 auto;"></div>
+          <div class="footer__slide__text__wrapper"
+            style="display: flex; justify-content: center; align-items: center; width: 100%; margin-bottom: 30px;"><img
+              src="images/UbPK27QY.png" loading="lazy" alt="Comphya" class="footer_overlay_logo_img"
+              style="max-height: 48px; width: auto; display: block; margin: 0 auto;"></div>
           <div class="text__center" style="max-width:800px; margin: 0 auto;">
-            <p>Comphya is a Swiss clinical-stage medical device company developing CaverSTIM™, an implantable neuromodulation system intended to support nerve function following radical prostatectomy.</p>
+            <p>Comphya is a Swiss clinical-stage medical device company developing CaverSTIM™, an implantable
+              neuromodulation system intended to support nerve function following radical prostatectomy.</p>
           </div>
         </div>
         <div class="footer__bottom">
-          <p style="text-align: center; color: #636e72; font-size: 16px; margin: 0; font-family: 'Inter', sans-serif;">© 2025 Comphya. All rights reserved.</p>
+          <p style="text-align: center; color: #636e72; font-size: 16px; margin: 0; font-family: 'Inter', sans-serif;">©
+            2025 Comphya. All rights reserved.</p>
         </div>
       </div>
     </div>
@@ -1702,7 +2000,9 @@ h6.split__title ~ .split__items .split__item {
     </div>
   </div>
   <div class="split__wrap">
-    <h3 class="split__title">Comphya is pioneering the future of urologic care with innovative neuromodulation technology. Our commitment to improving men's quality of life through precision medical devices represents a new era in post-surgical nerve support.</h3>
+    <h3 class="split__title">Comphya is pioneering the future of urologic care with innovative neuromodulation
+      technology. Our commitment to improving men's quality of life through precision medical devices represents a new
+      era in post-surgical nerve support.</h3>
     <div data-w-id="34d2315e-62f1-335d-61cd-14dde18dcc6f" class="split__items">
       <div data-w-id="34d2315e-62f1-335d-61cd-14dde18dcc70" class="split__item"></div>
       <div data-w-id="34d2315e-62f1-335d-61cd-14dde18dcc71" class="split__item"></div>
@@ -1745,19 +2045,21 @@ h6.split__title ~ .split__items .split__item {
       <div class="split__item"></div>
     </div>
   </div>
-  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68d1b6e69cdb91df35f09497" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=68d1b6e69cdb91df35f09497"
+    type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <script src="js/sanity-integration.js" type="text/javascript"></script>
-  
+
   <script>
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
       const navbar = document.querySelector('.navbar__wrapper');
       const heroSection = document.querySelector('.header__section__one');
-      
+
       if (heroSection) {
         const heroHeight = heroSection.offsetHeight;
-        
+
         // When scrolled past 70% of hero section, make navbar solid black
         if (window.scrollY > heroHeight * 0.7) {
           navbar.classList.add('scrolled');
@@ -1768,5 +2070,7 @@ h6.split__title ~ .split__items .split__item {
     });
   </script>
 </body>
+
 </html>
+
 </html>
