@@ -1628,14 +1628,15 @@
         `;
       }
       
-      // Show modal with animation
-      modalBackdrop.classList.add('active');
-      document.body.style.overflow = 'hidden';
-      
-      // Trigger animation after a small delay
-      setTimeout(() => {
-        modalBackdrop.classList.add('show');
-      }, 10);
+      // Defer showing to next frame so browser can process DOM updates (fixes Safari blank popup on reopen)
+      requestAnimationFrame(() => {
+        modalBackdrop.classList.add('active');
+        document.body.style.overflow = 'hidden';
+        
+        requestAnimationFrame(() => {
+          modalBackdrop.classList.add('show');
+        });
+      });
       
       // Setup focus trap
       setupFocusTrap();
@@ -1653,6 +1654,13 @@
       setTimeout(() => {
         modalBackdrop.classList.remove('active');
         document.body.style.overflow = '';
+        
+        // Clear modal content to avoid Safari blank-popup bug on reopen
+        modalAvatar.innerHTML = '';
+        modalName.textContent = '';
+        modalTitle.textContent = '';
+        modalBio.innerHTML = '';
+        modalSocial.innerHTML = '';
         
         // Restore focus to the element that opened the modal
         if (lastFocusedElement) {
