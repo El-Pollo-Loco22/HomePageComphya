@@ -263,11 +263,11 @@
     .about-team-section {
       background: #f8f9fa;
       padding: 96px 32px;
-      height: auto !important;
-      min-height: -webkit-max-content !important;
-      min-height: max-content !important;
-      overflow: hidden;
-      /* Clear layout overlaps in Safari */
+      position: relative;
+      z-index: 2;
+      height: auto;
+      min-height: auto;
+      overflow: visible;
     }
 
     .about-team-header {
@@ -309,12 +309,8 @@
       gap: 32px;
       max-width: 1050px;
       margin: 0 auto;
-      height: auto !important;
-      min-height: -webkit-max-content !important;
-      min-height: max-content !important;
       align-items: stretch;
-      /* Safari Grid Height Fix */
-      grid-auto-rows: minmax(min-content, max-content);
+      grid-auto-rows: minmax(0, auto);
     }
 
     .about-team-card {
@@ -328,12 +324,10 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
-      height: 100%;
-      min-height: -webkit-max-content !important;
-      min-height: max-content !important;
-      /* Fix Safari flex child collapsing */
-      -webkit-box-flex: 1;
-      flex: 1 1 auto;
+      height: auto;
+      min-height: 100%;
+      -webkit-box-flex: 0;
+      flex: 0 0 auto;
     }
 
     .about-team-card:hover {
@@ -425,6 +419,15 @@
     .about-cta-section {
       background: white;
       padding: 60px 45px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .about-contact-section {
+      background: #f8f9fa;
+      padding: 96px 32px;
+      position: relative;
+      z-index: 2;
     }
 
     .about-cta-card {
@@ -481,9 +484,11 @@
       z-index: 2;
     }
 
-    .about-contact-section {
-      background: #f8f9fa;
-      padding: 96px 32px;
+    .footer__section {
+      position: relative;
+      z-index: 1;
+      margin-top: 0 !important;
+      min-height: auto !important;
     }
 
     .about-contact-content {
