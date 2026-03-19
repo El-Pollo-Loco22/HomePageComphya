@@ -3908,6 +3908,17 @@ html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link {
   color: #6B7C8D;
 }
 
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link:hover {
+  /* Add dark blue glow for hover feedback on home page nav */
+  color: #B8D7FF;
+  text-shadow: 0 0 10px #0B3D91cc;
+}
+
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper {
+  /* Slightly darken navbar tint so links stand out over hero content */
+  background-color: #080808cc;
+}
+
 html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link.w--current {
   /* Keep active page link clearly visible on the hero/nav background */
   color: var(--white);
