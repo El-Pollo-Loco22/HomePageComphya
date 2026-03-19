@@ -431,6 +431,42 @@ blockquote {
   background-color: var(--white);
 }
 
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link {
+  /* Improve baseline readability on light navbar variants */
+  color: #556a80;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.25s ease, text-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link::after {
+  content: "";
+  position: absolute;
+  left: var(--xl);
+  right: var(--xl);
+  bottom: calc(var(--sm) * 0.45);
+  height: 1.5px;
+  background-color: currentColor;
+  opacity: 0;
+  transform: scaleX(0.6);
+  transform-origin: center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link:hover,
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link.w--current {
+  /* Keep interaction subtle but more visible within the site's blue palette */
+  color: #274b72;
+  text-shadow: 0 0 8px #1f4f7a33;
+  transform: translateY(-1px);
+}
+
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link:hover::after,
+.navbar__wrapper[data-wf--navbar--mode="dark"] .nav__link.w--current::after {
+  opacity: 0.75;
+  transform: scaleX(1);
+}
+
 .releted_codes {
   display: none;
 }
