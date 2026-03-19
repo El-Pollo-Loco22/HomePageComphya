@@ -53,6 +53,23 @@
       background-color: rgba(0, 0, 0, 1);
     }
 
+    /* When navbar darkens on scroll, switch nav text and CTA to white */
+    .navbar__wrapper.scrolled .nav__link,
+    .navbar__wrapper.scrolled .nav__link.w--current {
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: none;
+    }
+
+    .navbar__wrapper.scrolled .outline__button__light {
+      color: rgba(255, 255, 255, 0.95);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9);
+    }
+
+    .navbar__wrapper.scrolled .outline__button__light .button__text {
+      color: rgba(255, 255, 255, 0.95);
+      text-shadow: none;
+    }
+
     /* Mobile Optimizations */
     @media (max-width: 767px) {
 
