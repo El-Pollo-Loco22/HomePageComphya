@@ -3908,6 +3908,12 @@ html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link {
   color: #6B7C8D;
 }
 
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link.w--current {
+  /* Keep active page link clearly visible on the hero/nav background */
+  color: var(--white);
+  text-shadow: 0 2px 10px #000000cc;
+}
+
 html[data-wf-page="68d1b6e79cdb91df35f09516"] body .menu__toggle {
   /* Override menu toggle color for better contrast */
   color: #6B7C8D;
