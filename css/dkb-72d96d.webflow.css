@@ -3940,25 +3940,64 @@ html[data-wf-page="68d1b6e79cdb91df35f09516"] body ol {
 }
 
 html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link {
-  /* Override navigation link color for better contrast */
-  color: #6B7C8D;
-}
-
-html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link:hover {
-  /* Add dark blue glow for hover feedback on home page nav */
-  color: #B8D7FF;
-  text-shadow: 0 0 10px #0B3D91cc;
+  /* Pill-style nav treatment for home page */
+  color: #2f3f52;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-weight: 600;
+  background-color: var(--white);
+  box-shadow: 0 2px 8px #0f27401f;
+  text-shadow: none;
+  transform: none;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
 
 html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper {
-  /* Slightly darken navbar tint so links stand out over hero content */
-  background-color: #080808cc;
+  /* Match the lighter, clean reference style while staying slightly translucent */
+  background-color: #ffffffe8;
+  border-bottom: 1px solid #0f274014;
 }
 
-html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link.w--current {
-  /* Keep active page link clearly visible on the hero/nav background */
-  color: var(--white);
-  text-shadow: 0 2px 10px #000000cc;
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link::after {
+  /* Disable underline animation for home pill style */
+  display: none;
+}
+
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .nav__link:hover {
+  /* Keep white pill and add dark-blue outline on hover */
+  background-color: var(--white);
+  color: #1b3f6e;
+  box-shadow: inset 0 0 0 2px #1b3f6e, 0 2px 8px #0f27401f;
+}
+
+@media screen and (min-width: 992px) {
+  html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__row {
+    justify-content: space-between;
+  }
+
+  html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__logo {
+    margin-right: auto;
+  }
+
+  html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__menu {
+    margin-left: var(--xl);
+  }
+}
+
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper.scrolled .nav__link,
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper.scrolled .nav__link.w--current {
+  /* Keep the same constant pill treatment after navbar scroll state change */
+  background-color: var(--white);
+  color: #2f3f52;
+  box-shadow: 0 2px 8px #0f27401f;
+}
+
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper.scrolled .nav__link:hover,
+html[data-wf-page="68d1b6e79cdb91df35f09516"] body .navbar__wrapper.scrolled .nav__link.w--current:hover {
+  /* Keep white pill and add dark-blue outline on hover in scrolled state */
+  background-color: var(--white);
+  color: #1b3f6e;
+  box-shadow: inset 0 0 0 2px #1b3f6e, 0 2px 8px #0f27401f;
 }
 
 html[data-wf-page="68d1b6e79cdb91df35f09516"] body .menu__toggle {
